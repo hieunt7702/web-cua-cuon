@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { ThemeToggle } from "./ThemeToggle";
 
 export function Header() {
   const pathname = usePathname();
@@ -31,17 +30,11 @@ export function Header() {
 
   return (
     <nav className="bg-surface shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 border-b border-surface-variant">
-      <div className="flex items-center gap-3">
-        <div className="relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-primary-container to-yellow-600 shadow-md border border-white/20 shrink-0">
-          <span className="material-symbols-outlined text-white text-2xl md:text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>roofing</span>
-        </div>
-        <div className="flex flex-col justify-center">
-          <span className="text-2xl md:text-3xl font-extrabold tracking-tight text-on-surface leading-none" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-            Việt <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-yellow-600">Đức</span>
-          </span>
-          <span className="text-xs font-medium tracking-wide text-on-surface-variant mt-1 leading-none">Hệ Thống Cửa Cuốn</span>
-        </div>
-      </div>
+      <Link href="/" className="flex items-center">
+        <span className="text-lg md:text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary-container to-yellow-600" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 500 }}>
+          Cửa cuốn Việt Đức
+        </span>
+      </Link>
       
       <ul className="hidden md:flex lg:flex gap-4 lg:gap-8 xl:gap-12">
         <li><Link className={getLinkClasses("/")} href="/">Trang Chủ</Link></li>
@@ -53,10 +46,9 @@ export function Header() {
       </ul>
 
       <div className="flex items-center gap-4">
-        <ThemeToggle />
-        <a className="hidden sm:flex items-center gap-2 bg-primary-container text-on-primary px-4 py-2 md:px-6 md:py-3 rounded-full font-label-md text-label-md hover:bg-primary transition-colors whitespace-nowrap" href="tel:0982674327">
+        <a className="hidden sm:flex items-center gap-2 bg-primary-container text-on-primary px-4 py-1.5 md:px-5 md:py-2 rounded-[12px] font-label-md text-label-md hover:bg-primary transition-colors whitespace-nowrap" href="tel:0982674327">
           <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-          Hotline
+          098.267.4327
         </a>
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
