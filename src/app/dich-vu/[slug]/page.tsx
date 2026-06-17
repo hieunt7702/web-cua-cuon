@@ -80,7 +80,7 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
                <div className="bg-surface p-8 md:p-12 rounded-3xl shadow-sm border border-surface-container-high relative overflow-hidden">
                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
                  
-                 <div className="prose prose-sm md:prose-base dark:prose-invert max-w-none 
+                 <div className="prose prose-sm md:prose-base max-w-none 
                     prose-headings:font-headline-lg prose-headings:text-on-surface prose-headings:uppercase prose-headings:tracking-wide
                     prose-h1:text-xl prose-h1:md:text-2xl
                     prose-h2:text-lg prose-h2:md:text-xl prose-h2:border-b prose-h2:border-surface-container-high prose-h2:pb-4 prose-h2:mt-12

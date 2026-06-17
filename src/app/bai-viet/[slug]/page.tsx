@@ -98,7 +98,7 @@ export default async function BlogPostPage({
               </div>
 
               {/* Markdown Content */}
-              <div className="prose prose-sm md:prose-base dark:prose-invert prose-headings:font-headline-lg prose-headings:uppercase prose-h1:text-xl prose-h1:md:text-2xl prose-h2:text-lg prose-h2:md:text-xl prose-h3:text-base prose-h3:md:text-lg prose-a:text-primary-container hover:prose-a:text-primary max-w-none prose-img:rounded-xl">
+              <div className="prose prose-sm md:prose-base prose-headings:font-headline-lg prose-headings:uppercase prose-h1:text-xl prose-h1:md:text-2xl prose-h2:text-lg prose-h2:md:text-xl prose-h3:text-base prose-h3:md:text-lg prose-a:text-primary-container hover:prose-a:text-primary max-w-none prose-img:rounded-xl">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                   {post.content}
                 </ReactMarkdown>
