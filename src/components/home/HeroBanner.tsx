@@ -34,13 +34,14 @@ export function HeroBanner() {
 
           <FadeIn delay={700}>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">
-              <button className="bg-primary-container hover:bg-primary text-on-primary-container text-label-md font-label-md px-6 py-3.5 md:px-8 md:py-4 rounded-xl md:rounded flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
+              <a href="tel:0982674327" className="bg-primary-container hover:bg-primary text-on-primary-container text-label-md font-label-md px-6 py-3.5 md:px-8 md:py-4 rounded-xl md:rounded flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>support_agent</span>
                 LIÊN HỆ NGAY
-              </button>
-              <button className="bg-transparent border-2 border-surface-variant text-white hover:bg-surface-variant/10 text-label-md font-label-md px-6 py-3.5 md:px-8 md:py-4 rounded-xl md:rounded flex items-center justify-center transition-colors w-full sm:w-auto">
-                XEM BÁO GIÁ
-              </button>
+              </a>
+              <a href="https://zalo.me/0982674327" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-surface-variant text-white hover:bg-surface-variant/10 text-label-md font-label-md px-6 py-3.5 md:px-8 md:py-4 rounded-xl md:rounded flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
+                <span className="material-symbols-outlined">chat</span>
+                ZALO HỖ TRỢ
+              </a>
             </div>
           </FadeIn>
         </div>

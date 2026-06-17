@@ -146,26 +146,42 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
                 </a>
               </div>
 
-              <div className="bg-surface p-6 rounded-3xl border border-surface-container-high shadow-sm">
-                <h3 className="text-headline-md font-headline-md text-on-surface mb-6 uppercase border-l-4 border-primary-container pl-3">
-                  Dịch Vụ Khác
-                </h3>
-                <div className="space-y-4">
-                  {servicesData.filter(s => s.slug !== service.slug).map((otherService) => (
-                    <a key={otherService.slug} href={`/dich-vu/${otherService.slug}`} className="group flex items-center gap-4 p-3 rounded-xl hover:bg-surface-container-low transition-colors border border-transparent hover:border-surface-container-high">
-                      <div className="w-14 h-14 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+              <div className="bg-surface rounded-2xl border border-surface-container-high shadow-md overflow-hidden">
+                {/* Header */}
+                <div className="bg-primary-container px-5 py-4 flex items-center gap-2">
+                  <span className="material-symbols-outlined text-on-primary-container text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>grid_view</span>
+                  <h3 className="text-label-md font-bold text-on-primary-container uppercase tracking-wider">Dịch Vụ Khác</h3>
+                </div>
+                {/* Service list */}
+                <div className="divide-y divide-surface-container-high">
+                  {servicesData
+                    .filter(s => s.slug !== service.slug)
+                    .slice(0, 3)
+                    .map((otherService) => (
+                    <a
+                      key={otherService.slug}
+                      href={`/dich-vu/${otherService.slug}`}
+                      className="group flex items-center gap-3 px-5 py-4 hover:bg-surface-container-low transition-all"
+                    >
+                      <div className="w-14 h-14 rounded-xl overflow-hidden shrink-0 shadow border border-surface-container-high">
                         <img src={otherService.image} alt={otherService.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h4 className="text-label-md font-bold text-on-surface group-hover:text-primary-container transition-colors truncate">
+                        <h4 className="text-label-md font-semibold text-on-surface group-hover:text-primary-container transition-colors line-clamp-2 leading-snug mb-1">
                           {otherService.title}
                         </h4>
-                        <p className="text-label-sm text-on-surface-variant truncate mt-1">
-                          {otherService.excerpt}
-                        </p>
+                        <span className="inline-flex items-center gap-0.5 text-label-sm text-primary-container font-medium">
+                          Xem chi tiết <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        </span>
                       </div>
                     </a>
                   ))}
+                </div>
+                {/* Footer link */}
+                <div className="px-5 py-3 bg-surface-container-low border-t border-surface-container-high">
+                  <a href="/dich-vu" className="flex items-center justify-center gap-1 text-label-sm font-medium text-on-surface-variant hover:text-primary-container transition-colors">
+                    Xem tất cả dịch vụ <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  </a>
                 </div>
               </div>
 

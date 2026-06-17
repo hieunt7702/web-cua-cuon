@@ -52,7 +52,7 @@ export default async function BlogPostPage({
 
   return (
     <>
-      <section className="py-16 bg-surface relative overflow-hidden border-b border-surface-container-high">
+      <section className="py-16 bg-surface relative border-b border-surface-container-high">
         <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10 pt-10">
           {/* Breadcrumb */}
           <div className="inline-flex items-center gap-2 mb-8 text-label-sm">
@@ -63,7 +63,7 @@ export default async function BlogPostPage({
             <span className="text-primary-container line-clamp-1 max-w-[200px] sm:max-w-[300px]">{post.title}</span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             {/* Main Content */}
             <article className="lg:col-span-8">
               {/* Header */}
@@ -106,8 +106,7 @@ export default async function BlogPostPage({
             </article>
 
             {/* Sidebar */}
-            <aside className="lg:col-span-4">
-              <div className="sticky top-24 space-y-8">
+            <aside className="lg:col-span-4 sticky top-24 space-y-8">
                 <div className="bg-surface-container p-6 rounded-2xl border border-surface-container-high">
                   <h3 className="text-headline-md font-headline-md text-on-surface mb-4 uppercase border-b-2 border-primary-container pb-2 inline-block">
                     Bài Viết Mới Nhất
@@ -145,7 +144,6 @@ export default async function BlogPostPage({
                     098.267.4327
                   </a>
                 </div>
-              </div>
             </aside>
           </div>
         </div>
