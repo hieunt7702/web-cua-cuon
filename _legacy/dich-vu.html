@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dịch Vụ Sửa Chữa & Lắp Đặt Cửa Cuốn Chuyên Nghiệp 24/7</title>
+<meta name="description" content="Cung cấp dịch vụ sửa chữa, bảo dưỡng, làm remote, thay bình lưu điện và lắp đặt cửa cuốn nhanh chóng, uy tín và giá rẻ nhất.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="assets/js/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/css/style.css"/>
+
+<script>
+    if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.classList.remove('dark');
+    } else if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+    }
+</script>
+</head>
+<body class="bg-background text-on-surface font-body-md pt-20">
+<!-- Header (TopNavBar) -->
+<nav class="bg-surface shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 border-b border-surface-variant">
+<div class="flex items-center gap-3">
+<div class="relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-primary-container to-yellow-600 shadow-lg border border-white/10 shrink-0">
+    <span class="material-symbols-outlined text-white text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">roofing</span>
+</div>
+<div class="flex flex-col justify-center">
+    <span class="text-xl md:text-2xl font-black uppercase tracking-widest text-on-surface leading-none" style="font-family: 'Montserrat', sans-serif;">
+        Việt <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-yellow-500">Đức</span>
+    </span>
+    <span class="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-on-surface-variant mt-1.5 leading-none">Hệ Thống Cửa Cuốn</span>
+</div>
+</div>
+<ul class="hidden md:flex gap-gutter">
+<li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="index.html">Trang Chủ</a></li>
+<li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="gioi-thieu.html">Giới Thiệu</a></li>
+<li><a class="text-label-md font-label-md text-primary-container border-b-2 border-primary-container pb-1 opacity-80 transition-opacity" href="dich-vu.html">Dịch Vụ</a></li>
+<li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="san-pham.html">Sản Phẩm</a></li>
+<li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="bai-viet.html">Bài Viết</a></li>
+<li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="lien-he.html">Liên Hệ</a></li>
+</ul>
+<div class="flex items-center gap-4">
+<button id="theme-toggle" class="text-on-surface-variant hover:text-primary-container transition-colors mr-2">
+<span class="material-symbols-outlined text-2xl" id="theme-icon">light_mode</span>
+</button>
+<a class="hidden md:flex items-center gap-2 bg-primary-container text-on-primary px-6 py-3 rounded-full font-label-md text-label-md hover:bg-primary transition-colors" href="tel:0982674327">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+                Hotline: 098.267.4327
+            </a>
+<button class="md:hidden text-primary-container">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+
+<!-- Page Hero -->
+<section class="py-16 md:py-20 bg-surface relative overflow-hidden border-b border-surface-container-high">
+    <!-- Sophisticated background accent -->
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 pointer-events-none"></div>
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-container/10 to-transparent pointer-events-none"></div>
+    <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-primary-container/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10 flex flex-col items-center text-center">
+        <!-- Breadcrumb / Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container border border-surface-container-high mb-6 shadow-sm">
+            <span class="material-symbols-outlined text-primary-container text-sm">home</span>
+            <span class="text-label-sm text-on-surface-variant">/</span>
+            <span class="text-label-sm font-label-sm text-primary-container uppercase tracking-widest">Dịch Vụ</span>
+        </div>
+        
+        <!-- Elegant Title -->
+        <h1 class="text-headline-lg md:text-display-sm font-display-lg text-on-surface mb-4 uppercase tracking-wide">
+            Dịch Vụ Cửa Cuốn 24/7
+        </h1>
+        
+        <!-- Subtle Divider -->
+        <div class="w-16 h-1 bg-gradient-to-r from-transparent via-primary-container to-transparent mb-6"></div>
+        
+        <!-- Subtitle -->
+        <p class="text-body-md md:text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+            Chuyên cung cấp dịch vụ Sửa chữa - Lắp đặt - Bảo dưỡng cửa cuốn chuyên nghiệp, nhanh chóng và tận tâm.
+        </p>
+    </div>
+</section>
+
+<!-- Detailed Services List -->
+<section class="py-24 bg-background relative overflow-hidden border-t border-surface-container-high">
+    <div class="absolute top-1/2 right-0 w-96 h-96 bg-secondary-container/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+    <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-headline-lg font-headline-lg text-on-surface mb-4 uppercase">Danh Mục Dịch Vụ Cứu Hộ Tại Nhà</h2>
+            <div class="w-24 h-1 bg-primary-container mx-auto mb-6"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn hư hỏng</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn không đóng mở được</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn trọn gói</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn giá rẻ</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn theo yêu cầu</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn đóng mở kêu ầm ầm</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn 24/7</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn ngoài giờ làm việc (ban đêm)</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn hư thanh nhôm lá nhôm</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn hư bạc đạn</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn hư đường ray</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn hư motor</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn hư điều khiển lên (xuống)</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn quên chìa khóa</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn bị khóa trong</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn Tphcm</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn tại nhà</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn tận nơi</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận thi công lắp đặt cửa cuốn</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận cải tạo nâng cấp cửa cuốn</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận di dời cửa cuốn trọn gói</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn hư ròng rọc</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận sửa cửa cuốn lưu động</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận thay thế linh kiện cửa cuốn</span>
+            </div>
+            <div class="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
+                <span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="text-body-md text-on-surface">Nhận thay thế phụ kiện cửa cuốn</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bảng giá tham khảo -->
+<section class="py-24 bg-surface relative overflow-hidden border-t border-surface-container-high">
+    <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-headline-lg font-headline-lg text-on-surface mb-4 uppercase">Bảng Giá Tham Khảo</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-container to-transparent mx-auto"></div>
+        </div>
+        <div class="overflow-x-auto rounded-2xl border border-surface-container-high">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-surface-container">
+                        <th class="p-4 text-headline-md text-on-surface border-b border-surface-container-highest">Loại Dịch Vụ</th>
+                        <th class="p-4 text-headline-md text-on-surface border-b border-surface-container-highest">Giá Khởi Điểm (VNĐ)</th>
+                        <th class="p-4 text-headline-md text-on-surface border-b border-surface-container-highest">Bảo Hành</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-surface-container-low transition-colors">
+                        <td class="p-4 border-b border-surface-container-high text-on-surface-variant">Sửa lỗi kẹt lá cửa cuốn</td>
+                        <td class="p-4 border-b border-surface-container-high text-primary-container font-medium">Từ 300.000đ</td>
+                        <td class="p-4 border-b border-surface-container-high text-on-surface-variant">03 Tháng</td>
+                    </tr>
+                    <tr class="hover:bg-surface-container-low transition-colors">
+                        <td class="p-4 border-b border-surface-container-high text-on-surface-variant">Thay thế remote / Làm thêm chìa khóa</td>
+                        <td class="p-4 border-b border-surface-container-high text-primary-container font-medium">Từ 250.000đ/chìa</td>
+                        <td class="p-4 border-b border-surface-container-high text-on-surface-variant">06 Tháng</td>
+                    </tr>
+                    <tr class="hover:bg-surface-container-low transition-colors">
+                        <td class="p-4 border-b border-surface-container-high text-on-surface-variant">Sửa chữa bình lưu điện UPS</td>
+                        <td class="p-4 border-b border-surface-container-high text-primary-container font-medium">Từ 500.000đ</td>
+                        <td class="p-4 border-b border-surface-container-high text-on-surface-variant">06 Tháng</td>
+                    </tr>
+                    <tr class="hover:bg-surface-container-low transition-colors">
+                        <td class="p-4 border-b border-surface-container-high text-on-surface-variant">Bảo dưỡng toàn bộ cửa cuốn</td>
+                        <td class="p-4 border-b border-surface-container-high text-primary-container font-medium">Từ 400.000đ/Bộ</td>
+                        <td class="p-4 border-b border-surface-container-high text-on-surface-variant">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="text-body-sm text-center mt-4 text-on-surface-variant italic">*Lưu ý: Bảng giá mang tính tham khảo, giá thực tế sẽ báo trực tiếp sau khi thợ khảo sát tận nơi miễn phí.</p>
+    </div>
+</section>
+
+    <!-- Footer -->
+<footer class="bg-surface-container w-full border-t-[4px] border-primary-container relative overflow-hidden mt-auto">
+    <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-16 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
+            
+            <!-- Column 1: Brand & Contact -->
+            <div class="space-y-6 lg:col-span-2 lg:pr-8">
+                <div class="flex items-center gap-3">
+                    <div class="relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-primary-container to-yellow-600 shadow-lg border border-white/10 shrink-0">
+                        <span class="material-symbols-outlined text-white text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">roofing</span>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <span class="text-xl md:text-2xl font-black uppercase tracking-widest text-on-surface leading-none" style="font-family: 'Montserrat', sans-serif;">
+                            Việt <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-yellow-500">Đức</span>
+                        </span>
+                        <span class="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-on-surface-variant mt-1.5 leading-none">Hệ Thống Cửa Cuốn</span>
+                    </div>
+                </div>
+                <p class="text-body-md text-on-surface-variant leading-relaxed">
+                    Giải pháp an ninh toàn diện. Phục vụ chuyên nghiệp, tận tâm, có mặt nhanh chóng sau 30 phút.
+                </p>
+                <div class="space-y-3 pt-4 border-t border-surface-container-highest">
+                    <div class="flex items-center gap-2 text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary-container text-xl" style="font-variation-settings: 'FILL' 1;">call</span>
+                        <span class="font-medium text-on-surface">Hotline:</span>
+                        <a href="tel:0982674327" class="text-primary-container hover:text-primary transition-colors font-medium text-body-md">098.267.4327</a>
+                    </div>
+                    <div class="flex items-center gap-2 text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary-container text-xl" style="font-variation-settings: 'FILL' 1;">mail</span>
+                        <span class="font-medium text-on-surface">Email:</span>
+                        <a href="mailto:cuacuonvietduc0421@gmail.com" class="hover:text-primary-container transition-colors truncate text-body-md">cuacuonvietduc0421@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Dịch Vụ Nổi Bật -->
+            <div>
+                <h3 class="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                    Dịch Vụ Nổi Bật
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+                </h3>
+                <ul class="space-y-4">
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Sửa cửa cuốn 24/7</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Lắp đặt cửa cuốn mới</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Thay motor chính hãng</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Sửa bình lưu điện (UPS)</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Sao chép Remote</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Hỗ Trợ Khách Hàng -->
+            <div>
+                <h3 class="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                    Hỗ Trợ Khách Hàng
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+                </h3>
+                <ul class="space-y-4">
+                    <li><a href="gioi-thieu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Về Chúng Tôi</a></li>
+                    <li><a href="bai-viet.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Bảng giá dịch vụ</a></li>
+                    <li><a href="bai-viet.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Chính sách bảo hành</a></li>
+                    <li><a href="bai-viet.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Quy trình tiếp nhận</a></li>
+                    <li><a href="lien-he.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Gửi yêu cầu hỗ trợ</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Mạng Lưới Phục Vụ -->
+            <div>
+                <h3 class="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                    Mạng Lưới Phục Vụ
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+                </h3>
+                <p class="text-body-md text-on-surface-variant mb-4">Hệ thống trạm dịch vụ có mặt sau 30 phút tại các khu vực:</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">TP. Hồ Chí Minh</span>
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Bình Dương</span>
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Đồng Nai</span>
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Long An</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bg-surface-container-high py-6 border-t border-surface-container-highest relative z-10">
+        <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-body-sm text-on-surface-variant">
+                © <span id="current-year"></span> <span class="font-medium text-primary-container">Cửa Cuốn Việt Đức</span>. Đã đăng ký bản quyền.
+            </p>
+            <div class="flex items-center gap-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm"><span class="material-symbols-outlined text-lg">public</span></a>
+                <a href="https://zalo.me/0982674327" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm"><span class="material-symbols-outlined text-lg">chat</span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Fixed Floating Action Button (Zalo/Contact) -->
+<a class="fixed bottom-8 right-8 z-50 bg-primary-container text-on-primary-container p-4 rounded-full shadow-lg pulse-animation hover:bg-primary transition-colors flex items-center justify-center" href="tel:0982674327">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">forum</span>
+</a>
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const html = document.documentElement;
+
+    // Set initial icon
+    if (html.classList.contains('dark')) {
+        themeIcon.textContent = 'light_mode';
+    } else {
+        themeIcon.textContent = 'dark_mode';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        if (html.classList.contains('dark')) {
+            themeIcon.textContent = 'light_mode';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeIcon.textContent = 'dark_mode';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
+<script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body></html>

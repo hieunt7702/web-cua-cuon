@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tin Tức & Cẩm Nang Cửa Cuốn - Cửa Cuốn Việt Đức</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="assets/js/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/css/style.css"/>
+
+<script>
+    if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.classList.remove('dark');
+    } else if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+    }
+</script>
+</head>
+<body class="bg-background text-on-surface font-body-md pt-20">
+<!-- Header (TopNavBar) -->
+<nav class="bg-surface shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 border-b border-surface-variant">
+<div class="flex items-center gap-3">
+<div class="relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-primary-container to-yellow-600 shadow-lg border border-white/10 shrink-0">
+    <span class="material-symbols-outlined text-white text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">roofing</span>
+</div>
+<div class="flex flex-col justify-center">
+    <span class="text-xl md:text-2xl font-black uppercase tracking-widest text-on-surface leading-none" style="font-family: 'Montserrat', sans-serif;">
+        Việt <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-yellow-500">Đức</span>
+    </span>
+    <span class="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-on-surface-variant mt-1.5 leading-none">Hệ Thống Cửa Cuốn</span>
+</div>
+</div>
+<ul class="hidden md:flex gap-gutter">
+<li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="index.html">Trang Chủ</a></li>
+<li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="gioi-thieu.html">Giới Thiệu</a></li>
+<li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="dich-vu.html">Dịch Vụ</a></li>
+<li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="san-pham.html">Sản Phẩm</a></li>
+<li><a class="text-label-md font-label-md text-primary-container border-b-2 border-primary-container pb-1 opacity-80 transition-opacity" href="bai-viet.html">Bài Viết</a></li>
+<li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="lien-he.html">Liên Hệ</a></li>
+</ul>
+<div class="flex items-center gap-4">
+<button id="theme-toggle" class="text-on-surface-variant hover:text-primary-container transition-colors mr-2">
+<span class="material-symbols-outlined text-2xl" id="theme-icon">light_mode</span>
+</button>
+<a class="hidden md:flex items-center gap-2 bg-primary-container text-on-primary px-6 py-3 rounded-full font-label-md text-label-md hover:bg-primary transition-colors" href="tel:0982674327">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+                Hotline: 098.267.4327
+            </a>
+<button class="md:hidden text-primary-container">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+
+<!-- Page Hero -->
+<section class="py-16 md:py-20 bg-surface relative overflow-hidden border-b border-surface-container-high">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 pointer-events-none"></div>
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-container/10 to-transparent pointer-events-none"></div>
+    <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-primary-container/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10 flex flex-col items-center text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container border border-surface-container-high mb-6 shadow-sm">
+            <span class="material-symbols-outlined text-primary-container text-sm">home</span>
+            <span class="text-label-sm text-on-surface-variant">/</span>
+            <span class="text-label-sm font-label-sm text-primary-container uppercase tracking-widest">Tin Tức - Bài Viết</span>
+        </div>
+        
+        <h1 class="text-headline-lg md:text-display-sm font-display-lg text-on-surface mb-4 uppercase tracking-wide">
+            Cẩm Nang Cửa Cuốn
+        </h1>
+        
+        <div class="w-16 h-1 bg-gradient-to-r from-transparent via-primary-container to-transparent mb-6"></div>
+        
+        <p class="text-body-md md:text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+            Tổng hợp các kiến thức, kinh nghiệm và mẹo hay về cách sử dụng, bảo quản và khắc phục sự cố cửa cuốn hiệu quả nhất.
+        </p>
+    </div>
+</section>
+
+<!-- Blog Grid -->
+<section class="py-24 bg-background relative overflow-hidden border-t border-surface-container-high">
+    <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <article class="bg-surface rounded-2xl border border-surface-container-high overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div class="aspect-video relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1590847926227-c8d19760081e?w=800&q=80" alt="Cách bảo dưỡng cửa cuốn" class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-primary-container text-on-primary-container text-label-sm px-3 py-1 rounded-full font-medium">Mẹo hay</div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 text-label-sm text-on-surface-variant mb-3">
+                        <span class="material-symbols-outlined text-sm">calendar_month</span>
+                        <span>15/10/2023</span>
+                    </div>
+                    <h2 class="text-headline-md text-on-surface mb-3 line-clamp-2 hover:text-primary-container transition-colors cursor-pointer">Hướng dẫn cách bảo dưỡng cửa cuốn định kỳ ngay tại nhà</h2>
+                    <p class="text-body-sm text-on-surface-variant mb-4 line-clamp-3">Bảo dưỡng cửa cuốn thường xuyên giúp tăng tuổi thọ và hạn chế tối đa các sự cố kẹt lá, đứt cáp. Tìm hiểu ngay 5 bước bảo dưỡng đơn giản...</p>
+                    <a href="#" class="inline-flex items-center gap-1 text-primary-container hover:text-primary font-medium text-body-sm transition-colors">
+                        Đọc tiếp <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="bg-surface rounded-2xl border border-surface-container-high overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div class="aspect-video relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80" alt="Lỗi cửa cuốn thường gặp" class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-primary-container text-on-primary-container text-label-sm px-3 py-1 rounded-full font-medium">Kiến thức</div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 text-label-sm text-on-surface-variant mb-3">
+                        <span class="material-symbols-outlined text-sm">calendar_month</span>
+                        <span>02/11/2023</span>
+                    </div>
+                    <h2 class="text-headline-md text-on-surface mb-3 line-clamp-2 hover:text-primary-container transition-colors cursor-pointer">5 Lỗi cửa cuốn thường gặp nhất và cách khắc phục nhanh chóng</h2>
+                    <p class="text-body-sm text-on-surface-variant mb-4 line-clamp-3">Cửa cuốn không nhận remote, bấm cửa không lên hay kêu to lạch cạch? Bài viết này sẽ chỉ ra nguyên nhân và giải pháp sửa chữa tạm thời hiệu quả.</p>
+                    <a href="#" class="inline-flex items-center gap-1 text-primary-container hover:text-primary font-medium text-body-sm transition-colors">
+                        Đọc tiếp <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="bg-surface rounded-2xl border border-surface-container-high overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div class="aspect-video relative overflow-hidden bg-surface-container-high flex items-center justify-center">
+                    <span class="material-symbols-outlined text-8xl text-surface-container-highest">settings_remote</span>
+                    <div class="absolute top-4 left-4 bg-primary-container text-on-primary-container text-label-sm px-3 py-1 rounded-full font-medium">Tin tức</div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 text-label-sm text-on-surface-variant mb-3">
+                        <span class="material-symbols-outlined text-sm">calendar_month</span>
+                        <span>20/11/2023</span>
+                    </div>
+                    <h2 class="text-headline-md text-on-surface mb-3 line-clamp-2 hover:text-primary-container transition-colors cursor-pointer">Bảng giá sao chép, làm mới Remote cửa cuốn tại TPHCM</h2>
+                    <p class="text-body-sm text-on-surface-variant mb-4 line-clamp-3">Cập nhật bảng giá dịch vụ làm thêm chìa khóa, sao chép remote cửa cuốn các loại mã gạt, mã nhảy mới nhất năm 2024.</p>
+                    <a href="#" class="inline-flex items-center gap-1 text-primary-container hover:text-primary font-medium text-body-sm transition-colors">
+                        Đọc tiếp <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container w-full border-t-[4px] border-primary-container relative overflow-hidden mt-auto">
+    <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-16 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
+            
+            <!-- Column 1: Brand & Contact -->
+            <div class="space-y-6 lg:col-span-2 lg:pr-8">
+                <div class="flex items-center gap-3">
+                    <div class="relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-primary-container to-yellow-600 shadow-lg border border-white/10 shrink-0">
+                        <span class="material-symbols-outlined text-white text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">roofing</span>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <span class="text-xl md:text-2xl font-black uppercase tracking-widest text-on-surface leading-none" style="font-family: 'Montserrat', sans-serif;">
+                            Việt <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-yellow-500">Đức</span>
+                        </span>
+                        <span class="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-on-surface-variant mt-1.5 leading-none">Hệ Thống Cửa Cuốn</span>
+                    </div>
+                </div>
+                <p class="text-body-md text-on-surface-variant leading-relaxed">
+                    Giải pháp an ninh toàn diện. Phục vụ chuyên nghiệp, tận tâm, có mặt nhanh chóng sau 30 phút.
+                </p>
+                <div class="space-y-3 pt-4 border-t border-surface-container-highest">
+                    <div class="flex items-center gap-2 text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary-container text-xl" style="font-variation-settings: 'FILL' 1;">call</span>
+                        <span class="font-medium text-on-surface">Hotline:</span>
+                        <a href="tel:0982674327" class="text-primary-container hover:text-primary transition-colors font-medium text-body-md">098.267.4327</a>
+                    </div>
+                    <div class="flex items-center gap-2 text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary-container text-xl" style="font-variation-settings: 'FILL' 1;">mail</span>
+                        <span class="font-medium text-on-surface">Email:</span>
+                        <a href="mailto:cuacuonvietduc0421@gmail.com" class="hover:text-primary-container transition-colors truncate text-body-md">cuacuonvietduc0421@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Dịch Vụ Nổi Bật -->
+            <div>
+                <h3 class="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                    Dịch Vụ Nổi Bật
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+                </h3>
+                <ul class="space-y-4">
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Sửa cửa cuốn 24/7</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Lắp đặt cửa cuốn mới</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Thay motor chính hãng</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Sửa bình lưu điện (UPS)</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Sao chép Remote</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Hỗ Trợ Khách Hàng -->
+            <div>
+                <h3 class="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                    Hỗ Trợ Khách Hàng
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+                </h3>
+                <ul class="space-y-4">
+                    <li><a href="gioi-thieu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Về Chúng Tôi</a></li>
+                    <li><a href="bai-viet.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Bảng giá dịch vụ</a></li>
+                    <li><a href="bai-viet.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Chính sách bảo hành</a></li>
+                    <li><a href="bai-viet.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Quy trình tiếp nhận</a></li>
+                    <li><a href="lien-he.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Gửi yêu cầu hỗ trợ</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Mạng Lưới Phục Vụ -->
+            <div>
+                <h3 class="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                    Mạng Lưới Phục Vụ
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+                </h3>
+                <p class="text-body-md text-on-surface-variant mb-4">Hệ thống trạm dịch vụ có mặt sau 30 phút tại các khu vực:</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">TP. Hồ Chí Minh</span>
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Bình Dương</span>
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Đồng Nai</span>
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Long An</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bg-surface-container-high py-6 border-t border-surface-container-highest relative z-10">
+        <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-body-sm text-on-surface-variant">
+                © <span id="current-year"></span> <span class="font-medium text-primary-container">Cửa Cuốn Việt Đức</span>. Đã đăng ký bản quyền.
+            </p>
+            <div class="flex items-center gap-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm"><span class="material-symbols-outlined text-lg">public</span></a>
+                <a href="https://zalo.me/0982674327" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm"><span class="material-symbols-outlined text-lg">chat</span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Fixed Floating Action Button (Zalo/Contact) -->
+<a class="fixed bottom-8 right-8 z-50 bg-primary-container text-on-primary-container p-4 rounded-full shadow-lg pulse-animation hover:bg-primary transition-colors flex items-center justify-center" href="tel:0982674327">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">forum</span>
+</a>
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const html = document.documentElement;
+
+    // Set initial icon
+    if (html.classList.contains('dark')) {
+        themeIcon.textContent = 'light_mode';
+    } else {
+        themeIcon.textContent = 'dark_mode';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        if (html.classList.contains('dark')) {
+            themeIcon.textContent = 'light_mode';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeIcon.textContent = 'dark_mode';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
+<script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body></html>

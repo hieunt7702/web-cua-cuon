@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Cửa Cuốn Huy Hoàng - Sửa Chữa &amp; Lắp Đặt Chuyên Nghiệp</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#353534",
+                        "surface-container-high": "#2a2a2a",
+                        "inverse-primary": "#7d5700",
+                        "primary-fixed": "#ffdeaa",
+                        "primary-fixed-dim": "#f8bc4e",
+                        "on-secondary-container": "#603100",
+                        "surface": "#131313",
+                        "on-primary": "#422c00",
+                        "on-secondary-fixed-variant": "#6e3900",
+                        "tertiary-fixed": "#e4e2e1",
+                        "surface-variant": "#353534",
+                        "secondary-fixed": "#ffdcc3",
+                        "surface-bright": "#393939",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#d4c4b0",
+                        "surface-container-low": "#1c1b1b",
+                        "on-secondary": "#4d2600",
+                        "surface-container": "#201f1f",
+                        "outline": "#9c8f7c",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary": "#ffb77d",
+                        "on-tertiary": "#303030",
+                        "surface-tint": "#f8bc4e",
+                        "surface-dim": "#131313",
+                        "on-secondary-fixed": "#2f1500",
+                        "primary-container": "#fcc051",
+                        "tertiary": "#e8e5e5",
+                        "on-tertiary-container": "#555454",
+                        "secondary-container": "#fd8b00",
+                        "on-primary-container": "#714e00",
+                        "inverse-on-surface": "#313030",
+                        "secondary-fixed-dim": "#ffb77d",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-background": "#e5e2e1",
+                        "outline-variant": "#504536",
+                        "tertiary-container": "#cbc9c9",
+                        "error": "#ffb4ab",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "background": "#131313",
+                        "primary": "#ffe2b6",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary-fixed": "#271900",
+                        "on-primary-fixed-variant": "#5f4100",
+                        "on-tertiary-fixed": "#1b1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "max-width": "1440px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": [
+                            "Montserrat"
+                        ],
+                        "headline-md": [
+                            "Montserrat"
+                        ],
+                        "headline-lg-mobile": [
+                            "Montserrat"
+                        ],
+                        "label-sm": [
+                            "Montserrat"
+                        ],
+                        "display-lg": [
+                            "Montserrat"
+                        ],
+                        "body-lg": [
+                            "Montserrat"
+                        ],
+                        "label-md": [
+                            "Montserrat"
+                        ],
+                        "headline-lg": [
+                            "Montserrat"
+                        ]
+                    },
+                    "fontSize": {
+                        "body-md": [
+                            "16px",
+                            {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-md": [
+                            "24px",
+                            {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "headline-lg-mobile": [
+                            "24px",
+                            {
+                                "lineHeight": "32px",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "label-sm": [
+                            "12px",
+                            {
+                                "lineHeight": "16px",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "display-lg": [
+                            "56px",
+                            {
+                                "lineHeight": "64px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "900"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px",
+                            {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "label-md": [
+                            "14px",
+                            {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "headline-lg": [
+                            "32px",
+                            {
+                                "lineHeight": "40px",
+                                "fontWeight": "700"
+                            }
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(252, 192, 81, 0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgba(252, 192, 81, 0);
+            }
+
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(252, 192, 81, 0);
+            }
+        }
+
+        .hero-overlay {
+            background: linear-gradient(90deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0.4) 100%);
+        }
+
+        .card-shadow {
+            box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.04);
+        }
+    </style>
+
+<script>
+    if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.classList.remove('dark');
+    } else if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+    }
+</script>
+</head>
+
+<body class="bg-background text-on-surface font-body-md pt-20">
+    <!-- Header (TopNavBar) -->
+    <nav
+        class="bg-surface shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 border-b border-surface-variant">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary-container text-3xl"
+                style="font-variation-settings: 'FILL' 1;">roofing</span>
+            <span class="text-headline-md font-headline-md font-bold text-primary-container">
+                Cửa Cuốn Huy Hoàng
+            </span>
+        </div>
+        <ul class="hidden md:flex gap-gutter">
+            <li><a class="text-label-md font-label-md text-primary-container border-b-2 border-primary-container pb-1 opacity-80 transition-opacity"
+                    href="index.html">Trang Chủ</a></li>
+            <li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200"
+                    href="gioi-thieu.html">Giới Thiệu</a></li>
+            <li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200"
+                    href="dich-vu.html">Dịch Vụ</a></li>
+            <li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200"
+                    href="san-pham.html">Sản Phẩm</a></li>
+            <li><a class="text-label-md font-label-md text-on-surface-variant hover:text-primary-container transition-colors duration-200"
+                    href="lien-he.html">Liên Hệ</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <a class="hidden md:flex items-center gap-2 bg-primary-container text-on-primary px-6 py-3 rounded-full font-label-md text-label-md hover:bg-primary transition-colors"
+                href="tel:0982674327">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+                Hotline: 098.267.4327
+            </a>
+            <button class="md:hidden text-primary-container">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Hero Banner -->
+    <header class="relative w-full h-[600px] md:h-[700px] flex items-center justify-start overflow-hidden">
+        <div class="absolute inset-0 w-full h-full">
+            <img alt="A high-end architectural photo of a modern home featuring a large, premium metallic roller door closed over a garage. The lighting is natural, casting soft shadows that highlight the sleek horizontal lines of the industrial-grade door. The overall aesthetic is clean, secure, and highly professional, utilizing a sophisticated light-mode palette with subtle industrial gray tones."
+                class="w-full h-full object-cover object-center"
+                data-alt="A high-end architectural photo of a modern home featuring a large, premium metallic roller door closed over a garage. The lighting is natural, casting soft shadows that highlight the sleek horizontal lines of the industrial-grade door. The overall aesthetic is clean, secure, and highly professional, utilizing a sophisticated light-mode palette with subtle industrial gray tones."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9BDbAaTJifopK75HXs0JAIt_krTkh1EXK4uR_WghY8H3HVgZv387-1-u-DiNQ0Etv5rDvgof4DaKqy0SP2loApB0y7Cnbw2WopYpO3MXvG3Rsogd5GLeMwBluPWlNbnkz8ljHhh7r8FpbxU1ZFQK2sVYzyikcyAbUXNCJKBXrJ7UXoqRoSK5ob2SaNk2gBTJ_ZeWIqEHEwcmK29n7MeF2p9HNLmHDXjm9DSPevezXGztC90seAleWUfKjmVvKrlOB60HnCc1RKEfc" />
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop w-full">
+            <div class="max-w-2xl text-white">
+                <div
+                    class="inline-flex items-center gap-2 bg-primary-container/20 backdrop-blur-sm border border-primary-container/30 px-4 py-2 rounded-full mb-6">
+                    <span class="material-symbols-outlined text-primary-container"
+                        style="font-variation-settings: 'FILL' 1;">verified</span>
+                    <span class="text-label-md font-label-md text-primary-container uppercase">Dịch vụ 24/7 chuyên
+                        nghiệp</span>
+                </div>
+                <h1 class="text-display-lg font-display-lg text-white mb-6">
+                    SỬA CHỮA - LẮP ĐẶT <br /><span class="text-primary-container">BẢO HÀNH 24/7</span>
+                </h1>
+                <p class="text-body-lg font-body-lg text-surface-variant mb-8 max-w-xl">
+                    Giải pháp an ninh toàn diện cho ngôi nhà của bạn. Cam kết chất lượng, giá cạnh tranh, đội ngũ thợ
+                    chuyên nghiệp, có mặt nhanh chóng sau 30 phút.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button
+                        class="bg-primary-container hover:bg-primary text-on-primary-container text-label-md font-label-md px-8 py-4 rounded flex items-center justify-center gap-2 transition-colors">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1;">support_agent</span>
+                        LIÊN HỆ NGAY
+                    </button>
+                    <button
+                        class="bg-transparent border-2 border-surface-variant text-white hover:bg-surface-variant/10 text-label-md font-label-md px-8 py-4 rounded flex items-center justify-center transition-colors">
+                        XEM BÁO GIÁ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Trust & Quality Section -->
+    <section class="py-12 bg-surface border-b border-surface-container-high">
+        <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <div class="flex items-center gap-4 bg-surface-container p-6 rounded-lg card-shadow">
+                    <div
+                        class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-container">
+                        <span class="material-symbols-outlined text-2xl"
+                            style="font-variation-settings: 'FILL' 1;">timer</span>
+                    </div>
+                    <div>
+                        <h3 class="text-label-md font-label-md text-on-surface uppercase mb-1">Có Mặt Sau 30 Phút</h3>
+                        <p class="text-label-sm font-label-sm text-on-surface-variant">Khắc phục sự cố khẩn cấp 24/7</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 bg-surface-container p-6 rounded-lg card-shadow">
+                    <div
+                        class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-container">
+                        <span class="material-symbols-outlined text-2xl"
+                            style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                    </div>
+                    <div>
+                        <h3 class="text-label-md font-label-md text-on-surface uppercase mb-1">Cam Kết Chất Lượng</h3>
+                        <p class="text-label-sm font-label-sm text-on-surface-variant">Linh kiện chính hãng 100%</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 bg-surface-container p-6 rounded-lg card-shadow">
+                    <div
+                        class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-container">
+                        <span class="material-symbols-outlined text-2xl"
+                            style="font-variation-settings: 'FILL' 1;">engineering</span>
+                    </div>
+                    <div>
+                        <h3 class="text-label-md font-label-md text-on-surface uppercase mb-1">Đội Ngũ Chuyên Nghiệp
+                        </h3>
+                        <p class="text-label-sm font-label-sm text-on-surface-variant">Thợ lành nghề, nhiều kinh nghiệm
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Primary Services Grid -->
+    <section class="py-24 bg-background">
+        <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center mb-12">
+                <h2 class="text-headline-lg font-headline-lg text-on-surface mb-4 uppercase">Dịch Vụ Cung Cấp Chính</h2>
+                <div class="w-24 h-1 bg-primary-container mx-auto"></div>
+                <p class="mt-4 text-body-md font-body-md text-on-surface-variant max-w-2xl mx-auto">Chúng tôi cung cấp
+                    giải pháp toàn diện cho hệ thống cửa cuốn, đảm bảo an toàn và vận hành trơn tru cho mọi công trình.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-surface-container rounded-lg overflow-hidden card-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Close-up architectural shot of high-quality metallic roller door slats being inspected in a clean, industrial workshop setting. The lighting is bright and technical, highlighting the precision engineering and smooth texture of the gray metal surface."
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-alt="Close-up architectural shot of high-quality metallic roller door slats being inspected in a clean, industrial workshop setting. The lighting is bright and technical, highlighting the precision engineering and smooth texture of the gray metal surface."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTuix2ZgXq2q2IeB2maYHC8tC0gTo-312jqpUljbIO_WtchHyC7Ogynat8frArRWpid5XgwF5CxDwGixbHOMyeUPwxPxOzlufqqEtB3JrNLsmW0lRJXvH5_A8CF9QBAZBeoP1Y7i7HN0dXrlRrQoisfy3USLneF1mCvYTlwdLsBZtGV7P-hndbpqXfxOO3Hu1IiMtNfbM-o3L2RCOY4hQ2_T3wJkjIIGW2037HftigvOhQ3qNPgq_YQFdL-pOrzeQFgnELTvwSuXWy" />
+                        <div
+                            class="absolute top-4 right-4 bg-primary-container text-on-primary-container text-label-sm font-label-sm px-3 py-1 rounded-full uppercase">
+                            24/7 Service</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-headline-md font-headline-md text-on-surface mb-2">Thay Lá Nan Cửa Cuốn</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant mb-4 line-clamp-2">Nâng cấp lá nan
+                            cửa cuốn chất lượng cao, độ bền vượt trội. Giải pháp tối ưu thay thế các lá nan cũ hỏng,
+                            cong vênh.</p>
+                        <a class="inline-flex items-center text-primary-container font-label-md text-label-md hover:text-primary transition-colors"
+                            href="#">
+                            Xem chi tiết <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-surface-container rounded-lg overflow-hidden card-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="A highly detailed close-up of a robust industrial roller door motor and control unit mounted on a clean concrete wall. The metallic casing is sleek and functional, surrounded by precision-engineered pipes and cables. The scene uses a sterile, modern light-mode palette with stark industrial grays and sharp lighting to emphasize durability and technological reliability."
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-alt="A highly detailed close-up of a robust industrial roller door motor and control unit mounted on a clean concrete wall. The metallic casing is sleek and functional, surrounded by precision-engineered pipes and cables. The scene uses a sterile, modern light-mode palette with stark industrial grays and sharp lighting to emphasize durability and technological reliability."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzw-seGWFVFsNhs4I4HVyHW9VT5ZoSYRHoS94aekdRMESM6eBMejxth8ewhDIh1LzIMjjQ1RRgLoV1XOZbN7mvqSTWhlG_KKmGy2t4r1x4YFJ3JFqgJc84E-KDBwX9KyL7yzAfly6mC4IPR8MkyyE-Y_L-P8_QUfl0Klj40kvymxKNqHV3AsvYGwwwwSLP8Ct9kGu-uNm_u_NToGP8aGlEpkd8Lr_u6UE3y80OkT6sPz1FfLy7N8oLg-Wh_c_Yu3rCTo22MoKGercq" />
+                        <div
+                            class="absolute top-4 right-4 bg-primary-container text-on-primary-container text-label-sm font-label-sm px-3 py-1 rounded-full uppercase">
+                            24/7 Service</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-headline-md font-headline-md text-on-surface mb-2">Sửa Motor &amp; Điều Khiển
+                        </h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant mb-4 line-clamp-2">Chẩn đoán và khắc
+                            phục dứt điểm các lỗi motor, thay thế linh kiện chính hãng. Phục hồi chức năng điều khiển tự
+                            động nhanh chóng.</p>
+                        <a class="inline-flex items-center text-primary-container font-label-md text-label-md hover:text-primary transition-colors"
+                            href="#">
+                            Xem chi tiết <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-surface-container rounded-lg overflow-hidden card-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="A highly curated, modern flat-lay composition showing several sleek, premium remote controls for automated systems resting on a clean, light-colored textured fabric surface. The remotes feature minimalist designs with brushed metal, matte black, and wood-grain finishes, communicating high-end technology and precise control within a bright, airy environment."
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-alt="A highly curated, modern flat-lay composition showing several sleek, premium remote controls for automated systems resting on a clean, light-colored textured fabric surface. The remotes feature minimalist designs with brushed metal, matte black, and wood-grain finishes, communicating high-end technology and precise control within a bright, airy environment."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdqkBCKZXA7mVjedMZDZuI2Gm54e1zs0YNL5bJi_coRZRemVQs0s99rZBeCYs6AhmE5jJlPxwOuMcQg02bHhizF2MUCWpamgbpJkDM5MZlgmDFXfu4a-7B9DURux3hFcVQto7u0tkgaEtYFKfzAi3FBb83FJo6qwftCLAY3WvfCMj7NwVwjAQE2IwUp6wugjo412UkhZXieq5TY4pQbRPaa9hU4f2Tlfjfe4bSC6INuQDJMXUrAJgkWyJax-GyzHouox9PTW77TYai" />
+                        <div
+                            class="absolute top-4 right-4 bg-primary-container text-on-primary-container text-label-sm font-label-sm px-3 py-1 rounded-full uppercase">
+                            24/7 Service</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-headline-md font-headline-md text-on-surface mb-2">Làm Remote Uy Tín</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant mb-4 line-clamp-2">Sao chép, làm mới
+                            remote cửa cuốn các loại mã cố định, mã nhảy an toàn tuyệt đối. Phôi remote chất lượng, bảo
+                            hành dài hạn.</p>
+                        <a class="inline-flex items-center text-primary-container font-label-md text-label-md hover:text-primary transition-colors"
+                            href="#">
+                            Xem chi tiết <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-surface-container rounded-lg overflow-hidden card-shadow group">
+                    <div
+                        class="relative h-48 bg-surface-container-high flex items-center justify-center overflow-hidden">
+                        <span class="material-symbols-outlined text-6xl text-outline-variant"
+                            style="font-variation-settings: 'FILL' 0;">battery_charging_full</span>
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface-container/50 to-transparent"></div>
+                        <div
+                            class="absolute top-4 right-4 bg-primary-container text-on-primary-container text-label-sm font-label-sm px-3 py-1 rounded-full uppercase">
+                            24/7 Service</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-headline-md font-headline-md text-on-surface mb-2">Sửa Bình Lưu Điện (UPS)</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant mb-4 line-clamp-2">Kiểm tra, thay ắc
+                            quy, sửa mạch UPS đảm bảo cửa cuốn hoạt động bình thường ngay cả khi mất điện đột ngột.</p>
+                        <a class="inline-flex items-center text-primary-container font-label-md text-label-md hover:text-primary transition-colors"
+                            href="#">
+                            Xem chi tiết <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-surface-container rounded-lg overflow-hidden card-shadow group">
+                    <div
+                        class="relative h-48 bg-surface-container-high flex items-center justify-center overflow-hidden">
+                        <span class="material-symbols-outlined text-6xl text-outline-variant"
+                            style="font-variation-settings: 'FILL' 0;">construction</span>
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface-container/50 to-transparent"></div>
+                        <div
+                            class="absolute top-4 right-4 bg-primary-container text-on-primary-container text-label-sm font-label-sm px-3 py-1 rounded-full uppercase">
+                            24/7 Service</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-headline-md font-headline-md text-on-surface mb-2">Bảo Trì Định Kỳ</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant mb-4 line-clamp-2">Gói bảo dưỡng vệ
+                            sinh ray, tra dầu mỡ, kiểm tra an toàn toàn diện giúp kéo dài tuổi thọ hệ thống cửa cuốn.
+                        </p>
+                        <a class="inline-flex items-center text-primary-container font-label-md text-label-md hover:text-primary transition-colors"
+                            href="#">
+                            Xem chi tiết <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-surface-container rounded-lg overflow-hidden card-shadow group">
+                    <div
+                        class="relative h-48 bg-surface-container-high flex items-center justify-center overflow-hidden">
+                        <span class="material-symbols-outlined text-6xl text-outline-variant"
+                            style="font-variation-settings: 'FILL' 0;">garage</span>
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface-container/50 to-transparent"></div>
+                        <div
+                            class="absolute top-4 right-4 bg-primary-container text-on-primary-container text-label-sm font-label-sm px-3 py-1 rounded-full uppercase">
+                            24/7 Service</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-headline-md font-headline-md text-on-surface mb-2">Lắp Đặt Cửa Cuốn Mới</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant mb-4 line-clamp-2">Tư vấn, khảo sát
+                            và thi công lắp ráp cửa cuốn thế hệ mới từ các thương hiệu uy tín, đảm bảo thẩm mỹ và an
+                            ninh.</p>
+                        <a class="inline-flex items-center text-primary-container font-label-md text-label-md hover:text-primary transition-colors"
+                            href="#">
+                            Xem chi tiết <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+<footer class="bg-surface-container w-full border-t-[4px] border-primary-container relative overflow-hidden mt-auto">
+    <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-16 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
+            
+            <!-- Column 1: Brand & Contact -->
+            <div class="space-y-6 lg:col-span-2 lg:pr-8">
+                <div class="flex items-center gap-3">
+                    <div class="relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-primary-container to-yellow-600 shadow-lg border border-white/10 shrink-0">
+                        <span class="material-symbols-outlined text-white text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">roofing</span>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <span class="text-xl md:text-2xl font-black uppercase tracking-widest text-on-surface leading-none" style="font-family: 'Montserrat', sans-serif;">
+                            Việt <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-yellow-500">Đức</span>
+                        </span>
+                        <span class="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-on-surface-variant mt-1.5 leading-none">Hệ Thống Cửa Cuốn</span>
+                    </div>
+                </div>
+                <p class="text-body-md text-on-surface-variant leading-relaxed">
+                    Giải pháp an ninh toàn diện. Phục vụ chuyên nghiệp, tận tâm, có mặt nhanh chóng sau 30 phút.
+                </p>
+                <div class="space-y-3 pt-4 border-t border-surface-container-highest">
+                    <div class="flex items-center gap-2 text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary-container text-xl" style="font-variation-settings: 'FILL' 1;">call</span>
+                        <span class="font-medium text-on-surface">Hotline:</span>
+                        <a href="tel:0982674327" class="text-primary-container hover:text-primary transition-colors font-medium text-body-md">098.267.4327</a>
+                    </div>
+                    <div class="flex items-center gap-2 text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary-container text-xl" style="font-variation-settings: 'FILL' 1;">mail</span>
+                        <span class="font-medium text-on-surface">Email:</span>
+                        <a href="mailto:cuacuonvietduc0421@gmail.com" class="hover:text-primary-container transition-colors truncate text-body-md">cuacuonvietduc0421@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Dịch Vụ Nổi Bật -->
+            <div>
+                <h3 class="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                    Dịch Vụ Nổi Bật
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+                </h3>
+                <ul class="space-y-4">
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Sửa cửa cuốn 24/7</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Lắp đặt cửa cuốn mới</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Thay motor chính hãng</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Sửa bình lưu điện (UPS)</a></li>
+                    <li><a href="dich-vu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Sao chép Remote</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Hỗ Trợ Khách Hàng -->
+            <div>
+                <h3 class="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                    Hỗ Trợ Khách Hàng
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+                </h3>
+                <ul class="space-y-4">
+                    <li><a href="gioi-thieu.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Về Chúng Tôi</a></li>
+                    <li><a href="bai-viet.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Bảng giá dịch vụ</a></li>
+                    <li><a href="bai-viet.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Chính sách bảo hành</a></li>
+                    <li><a href="bai-viet.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Quy trình tiếp nhận</a></li>
+                    <li><a href="lien-he.html" class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span class="material-symbols-outlined text-sm">chevron_right</span> Gửi yêu cầu hỗ trợ</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Mạng Lưới Phục Vụ -->
+            <div>
+                <h3 class="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                    Mạng Lưới Phục Vụ
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+                </h3>
+                <p class="text-body-md text-on-surface-variant mb-4">Hệ thống trạm dịch vụ có mặt sau 30 phút tại các khu vực:</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">TP. Hồ Chí Minh</span>
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Bình Dương</span>
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Đồng Nai</span>
+                    <span class="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Long An</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bg-surface-container-high py-6 border-t border-surface-container-highest relative z-10">
+        <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-body-sm text-on-surface-variant">
+                © <span id="current-year"></span> <span class="font-medium text-primary-container">Cửa Cuốn Việt Đức</span>. Đã đăng ký bản quyền.
+            </p>
+            <div class="flex items-center gap-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm"><span class="material-symbols-outlined text-lg">public</span></a>
+                <a href="https://zalo.me/0982674327" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm"><span class="material-symbols-outlined text-lg">chat</span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- Fixed Floating Action Button (Zalo/Contact) -->
+    <a class="fixed bottom-8 right-8 z-50 bg-primary-container text-on-primary-container p-4 rounded-full shadow-lg pulse-animation hover:bg-primary transition-colors flex items-center justify-center"
+        href="tel:0982674327">
+        <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">forum</span>
+    </a>
+<script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

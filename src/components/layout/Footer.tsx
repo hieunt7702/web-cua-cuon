@@ -1,0 +1,121 @@
+"use client";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+export function Footer() {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
+  return (
+    <>
+      <footer className="bg-surface-container w-full border-t-[4px] border-primary-container relative overflow-hidden mt-auto">
+        <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-16 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
+
+            {/* Column 1: Brand & Contact */}
+            <div className="space-y-6 lg:col-span-2 lg:pr-8">
+              <div className="flex items-center gap-3">
+                <div className="relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-primary-container to-yellow-600 shadow-lg border border-white/10 shrink-0">
+                  <span className="material-symbols-outlined text-white text-2xl md:text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>roofing</span>
+                </div>
+                <div className="flex flex-col justify-center">
+                  <span className="text-xl md:text-2xl font-black uppercase tracking-widest text-on-surface leading-none" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    Việt <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-yellow-500">Đức</span>
+                  </span>
+                  <span className="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-on-surface-variant mt-1.5 leading-none">Hệ Thống Cửa Cuốn</span>
+                </div>
+              </div>
+              <p className="text-body-md text-on-surface-variant leading-relaxed">
+                Giải pháp an ninh toàn diện. Phục vụ chuyên nghiệp, tận tâm, có mặt nhanh chóng sau 30 phút.
+              </p>
+              <div className="space-y-3 pt-4 border-t border-surface-container-highest">
+                <div className="flex items-start gap-3 text-on-surface-variant">
+                  <span className="material-symbols-outlined text-primary-container shrink-0 mt-0.5 text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>location_on</span>
+                  <div className="flex flex-col gap-1">
+                    <span className="font-medium text-on-surface">Hệ thống hơn 50+ chi nhánh</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 text-on-surface-variant">
+                  <span className="material-symbols-outlined text-primary-container text-xl shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+                  <span className="font-medium text-on-surface">Hotline:</span>
+                  <a href="tel:0982674327" className="text-primary-container hover:text-primary transition-colors font-medium text-body-md">098.267.4327</a>
+                </div>
+                <div className="flex items-center gap-3 text-on-surface-variant">
+                  <span className="material-symbols-outlined text-primary-container text-xl shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>mail</span>
+                  <span className="font-medium text-on-surface">Email:</span>
+                  <a href="mailto:cuacuonvietduc0421@gmail.com" className="hover:text-primary-container transition-colors truncate text-body-md">cuacuonvietduc0421@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            {/* Column 2: Dịch Vụ Nổi Bật */}
+            <div>
+              <h3 className="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                Dịch Vụ Nổi Bật
+                <span className="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+              </h3>
+              <ul className="space-y-4">
+                <li><Link href="/dich-vu" className="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span className="material-symbols-outlined text-sm">chevron_right</span> Sửa cửa cuốn 24/7</Link></li>
+                <li><Link href="/dich-vu" className="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span className="material-symbols-outlined text-sm">chevron_right</span> Lắp đặt cửa cuốn mới</Link></li>
+                <li><Link href="/dich-vu" className="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span className="material-symbols-outlined text-sm">chevron_right</span> Thay motor chính hãng</Link></li>
+                <li><Link href="/dich-vu" className="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span className="material-symbols-outlined text-sm">chevron_right</span> Sửa bình lưu điện (UPS)</Link></li>
+                <li><Link href="/dich-vu" className="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span className="material-symbols-outlined text-sm">chevron_right</span> Sao chép Remote</Link></li>
+              </ul>
+            </div>
+
+            {/* Column 3: Hỗ Trợ Khách Hàng */}
+            <div>
+              <h3 className="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                Hỗ Trợ Khách Hàng
+                <span className="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+              </h3>
+              <ul className="space-y-4">
+                <li><Link href="/gioi-thieu" className="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span className="material-symbols-outlined text-sm">chevron_right</span> Về Chúng Tôi</Link></li>
+                <li><Link href="/bai-viet" className="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span className="material-symbols-outlined text-sm">chevron_right</span> Bảng giá dịch vụ</Link></li>
+                <li><Link href="/bai-viet" className="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span className="material-symbols-outlined text-sm">chevron_right</span> Chính sách bảo hành</Link></li>
+                <li><Link href="/bai-viet" className="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span className="material-symbols-outlined text-sm">chevron_right</span> Quy trình tiếp nhận</Link></li>
+                <li><Link href="/lien-he" className="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-primary-container transition-all hover:translate-x-1"><span className="material-symbols-outlined text-sm">chevron_right</span> Gửi yêu cầu hỗ trợ</Link></li>
+              </ul>
+            </div>
+
+            {/* Column 4: Mạng Lưới Phục Vụ */}
+            <div>
+              <h3 className="text-title-lg font-headline-sm text-on-surface mb-6 relative inline-block">
+                Mạng Lưới Phục Vụ
+                <span className="absolute -bottom-2 left-0 w-8 h-1 bg-primary-container rounded-full"></span>
+              </h3>
+              <p className="text-body-md text-on-surface-variant mb-4">Hệ thống trạm dịch vụ có mặt sau 30 phút tại các khu vực:</p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">TP. Hồ Chí Minh</span>
+                <span className="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Bình Dương</span>
+                <span className="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Đồng Nai</span>
+                <span className="px-3 py-1 bg-surface-container-high border border-surface-container-highest rounded-full text-label-sm text-on-surface">Long An</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="bg-surface-container-high py-6 border-t border-surface-container-highest relative z-10">
+          <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-body-sm text-on-surface-variant">
+              © <span>{currentYear}</span> <span className="font-medium text-primary-container">Cửa Cuốn Việt Đức</span>. Đã đăng ký bản quyền.
+            </p>
+            <div className="flex items-center gap-4">
+              <a href="#" className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm"><span className="material-symbols-outlined text-lg">public</span></a>
+              <a href="https://zalo.me/0982674327" className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm"><span className="material-symbols-outlined text-lg">chat</span></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* Fixed Floating Action Button (Zalo/Contact) */}
+      <a className="fixed bottom-8 right-8 z-50 bg-primary-container text-on-primary-container p-4 rounded-full shadow-lg pulse-animation hover:bg-primary transition-colors flex items-center justify-center" href="tel:0982674327">
+        <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>forum</span>
+      </a>
+    </>
+  );
+}
