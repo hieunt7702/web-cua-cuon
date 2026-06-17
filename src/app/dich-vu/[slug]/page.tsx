@@ -33,7 +33,7 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
                 <span className="text-label-sm font-label-sm text-primary-container uppercase tracking-widest">Dịch Vụ</span>
               </div>
               
-              <h1 className="text-headline-lg md:text-display-sm font-display-lg text-on-surface mb-6 uppercase tracking-wide leading-tight">
+              <h1 className="text-headline-md md:text-headline-lg font-headline-lg text-on-surface mb-6 uppercase tracking-wide leading-tight">
                 {service.title}
               </h1>
               
@@ -80,9 +80,11 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
                <div className="bg-surface p-8 md:p-12 rounded-3xl shadow-sm border border-surface-container-high relative overflow-hidden">
                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
                  
-                 <div className="prose prose-invert prose-lg max-w-none 
+                 <div className="prose prose-sm md:prose-base dark:prose-invert max-w-none 
                     prose-headings:font-headline-lg prose-headings:text-on-surface prose-headings:uppercase prose-headings:tracking-wide
-                    prose-h2:border-b prose-h2:border-surface-container-high prose-h2:pb-4 prose-h2:mt-12
+                    prose-h1:text-xl prose-h1:md:text-2xl
+                    prose-h2:text-lg prose-h2:md:text-xl prose-h2:border-b prose-h2:border-surface-container-high prose-h2:pb-4 prose-h2:mt-12
+                    prose-h3:text-base prose-h3:md:text-lg
                     prose-p:text-on-surface-variant prose-p:leading-relaxed
                     prose-li:text-on-surface-variant prose-li:marker:text-primary-container
                     prose-strong:text-on-surface prose-strong:font-bold

@@ -218,3 +218,41 @@
 .dark .card-shadow {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
 }
+
+@layer base {
+  /* Scoped to prose/markdown content areas only */
+  .prose h1 {
+    font-size: 1.5rem;      /* 24px */
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+  .prose h2 {
+    font-size: 1.25rem;     /* 20px */
+    line-height: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .prose h3 {
+    font-size: 1.125rem;    /* 18px */
+    line-height: 1.625rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .prose h4 {
+    font-size: 1rem;        /* 16px */
+    line-height: 1.5rem;
+    font-weight: 600;
+  }
+  .prose h5, .prose h6 {
+    font-size: 0.875rem;    /* 14px */
+    line-height: 1.25rem;
+    font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    .prose h1 { font-size: 1.25rem; line-height: 1.75rem; }
+    .prose h2 { font-size: 1.125rem; line-height: 1.625rem; }
+    .prose h3 { font-size: 1rem; line-height: 1.5rem; }
+  }
+}
+
