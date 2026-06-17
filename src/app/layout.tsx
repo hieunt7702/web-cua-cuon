@@ -18,17 +18,7 @@ export default function RootLayout({
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                localStorage.removeItem('theme');
-                document.documentElement.classList.remove('dark');
-                document.documentElement.style.colorScheme = 'light';
-              } catch (e) {}
-            `,
-          }}
-        />
+
       </head>
       <body className="bg-background text-on-surface font-body-md pt-20" suppressHydrationWarning>
         <Header />

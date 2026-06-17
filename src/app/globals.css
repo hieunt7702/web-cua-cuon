@@ -1,8 +1,6 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
   --spacing-max-width: 1440px;
   --spacing-margin-mobile: 16px;

@@ -2,12 +2,12 @@ import { FadeIn } from "@/components/ui/FadeIn";
 
 export function HeroBanner() {
   return (
-    <header className="relative w-full h-[100dvh] min-h-[550px] md:h-[700px] flex items-center justify-start overflow-hidden pt-20 md:pt-0">
+    <header className="relative w-full h-auto pt-32 pb-20 lg:pt-0 lg:pb-0 lg:h-[850px] flex items-center justify-start overflow-hidden">
       <div className="absolute inset-0 w-full h-full">
-        <img 
-          alt="A high-end architectural photo of a modern home featuring a large, premium metallic roller door closed over a garage. The lighting is natural, casting soft shadows that highlight the sleek horizontal lines of the industrial-grade door. The overall aesthetic is clean, secure, and highly professional, utilizing a sophisticated light-mode palette with subtle industrial gray tones." 
-          className="w-full h-full object-cover object-center" 
-          src="/assets/images/hero.jpg"
+        <img
+          alt="A high-end architectural photo of a modern home featuring a large, premium metallic roller door closed over a garage. The lighting is natural, casting soft shadows that highlight the sleek horizontal lines of the industrial-grade door. The overall aesthetic is clean, secure, and highly professional, utilizing a sophisticated light-mode palette with subtle industrial gray tones."
+          className="w-full h-full object-cover object-center"
+          src="/assets/images/hero1.png"
         />
         <div className="absolute inset-0 hero-overlay bg-black/40 md:bg-transparent"></div>
       </div>
@@ -19,10 +19,10 @@ export function HeroBanner() {
               <span className="text-label-sm md:text-label-md font-label-md text-primary-container uppercase">Dịch vụ 24/7 chuyên nghiệp</span>
             </div>
           </FadeIn>
-          
+
           <FadeIn delay={300}>
             <h1 className="text-headline-lg md:text-display-md lg:text-display-lg font-display-lg text-white mb-4 md:mb-6 leading-tight">
-              SỬA CHỮA - LẮP ĐẶT <br className="hidden md:block"/><span className="text-primary-container"> BẢO HÀNH 24/7</span>
+              SỬA CHỮA - LẮP ĐẶT <br className="hidden md:block" /><span className="text-primary-container"> BẢO HÀNH 24/7</span>
             </h1>
           </FadeIn>
 

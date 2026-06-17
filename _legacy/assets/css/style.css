@@ -48,55 +48,7 @@
     --on-tertiary-fixed: 27 28 28;
 }
 
-.dark {
-    --surface-container-highest: 53 53 52;
-    --surface-container-high: 42 42 42;
-    --inverse-primary: 125 87 0;
-    --primary-fixed: 255 222 170;
-    --primary-fixed-dim: 248 188 78;
-    --on-secondary-container: 96 49 0;
-    --surface: 19 19 19;
-    --on-primary: 66 44 0;
-    --on-secondary-fixed-variant: 110 57 0;
-    --tertiary-fixed: 228 226 225;
-    --surface-variant: 53 53 52;
-    --secondary-fixed: 255 220 195;
-    --surface-bright: 57 57 57;
-    --on-error: 105 0 5;
-    --on-surface-variant: 212 196 176;
-    --surface-container-low: 28 27 27;
-    --on-secondary: 77 38 0;
-    --surface-container: 32 31 31;
-    --outline: 156 143 124;
-    --inverse-surface: 229 226 225;
-    --secondary: 255 183 125;
-    --on-tertiary: 48 48 48;
-    --surface-tint: 248 188 78;
-    --surface-dim: 19 19 19;
-    --on-secondary-fixed: 47 21 0;
-    --primary-container: 252 192 81;
-    --tertiary: 232 229 229;
-    --on-tertiary-container: 85 84 84;
-    --secondary-container: 253 139 0;
-    --on-primary-container: 113 78 0;
-    --inverse-on-surface: 49 48 48;
-    --secondary-fixed-dim: 255 183 125;
-    --on-tertiary-fixed-variant: 71 71 71;
-    --on-background: 229 226 225;
-    --outline-variant: 80 69 54;
-    --tertiary-container: 203 201 201;
-    --error: 255 180 171;
-    --on-error-container: 255 218 214;
-    --on-surface: 229 226 225;
-    --error-container: 147 0 10;
-    --background: 19 19 19;
-    --primary: 255 226 182;
-    --tertiary-fixed-dim: 200 198 198;
-    --surface-container-lowest: 14 14 14;
-    --on-primary-fixed: 39 25 0;
-    --on-primary-fixed-variant: 95 65 0;
-    --on-tertiary-fixed: 27 28 28;
-}
+
 
 .pulse-animation {
     animation: pulse 2s infinite;
@@ -111,7 +63,4 @@
 }
 .card-shadow {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
-}
-.dark .card-shadow {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
 }
