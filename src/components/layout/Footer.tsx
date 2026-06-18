@@ -105,9 +105,25 @@ export function Footer() {
         </div>
       </footer>
       {/* Fixed Floating Action Button (Zalo/Contact) */}
-      <a className="fixed bottom-8 right-8 z-50 bg-primary-container text-on-primary-container p-4 rounded-full shadow-lg pulse-animation hover:bg-primary transition-colors flex items-center justify-center" href="tel:0982674327">
-        <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>forum</span>
-      </a>
+      <div className="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
+        {/* Zalo Button */}
+        <a 
+          className="bg-[#0068ff] text-white w-14 h-14 rounded-full shadow-lg pulse-blue hover:bg-[#0052cc] transition-colors flex items-center justify-center" 
+          href="https://zalo.me/0982674327"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" className="w-[34px] h-[34px] object-contain rounded-full" />
+        </a>
+
+        {/* Phone Button */}
+        <a 
+          className="bg-[#10b981] text-white w-14 h-14 rounded-full shadow-lg pulse-green hover:bg-[#059669] transition-colors flex items-center justify-center" 
+          href="tel:0982674327"
+        >
+          <span className="material-symbols-outlined text-[32px]" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+        </a>
+      </div>
     </>
   );
 }

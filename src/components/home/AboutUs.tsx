@@ -8,11 +8,11 @@ export function AboutUs() {
       <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="w-full md:w-1/2 relative">
-            <div className="aspect-video md:aspect-square rounded-2xl overflow-hidden shadow-md relative group">
+            <div className="rounded-2xl overflow-hidden shadow-md relative group bg-surface-container">
               <img 
-                src="/assets/images/hero.jpg" 
+                src="/assets/images/cuacuon29.png" 
                 alt="Về Cửa Cuốn Việt Đức" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
