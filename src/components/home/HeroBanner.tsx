@@ -5,9 +5,10 @@ export function HeroBanner() {
     <header className="relative w-full h-auto pt-32 pb-20 lg:pt-0 lg:pb-0 lg:h-[850px] flex items-center justify-start overflow-hidden">
       <div className="absolute inset-0 w-full h-full">
         <img
-          alt="A high-end architectural photo of a modern home featuring a large, premium metallic roller door closed over a garage. The lighting is natural, casting soft shadows that highlight the sleek horizontal lines of the industrial-grade door. The overall aesthetic is clean, secure, and highly professional, utilizing a sophisticated light-mode palette with subtle industrial gray tones."
-          className="w-full h-full object-cover object-center"
-          src="/assets/images/hero1.png"
+          alt="A high-end architectural photo of a modern home featuring a large, premium metallic roller door closed over a garage. The lighting is natural, casting soft shadows that highlight the door's sleek, horizontal slats. The surrounding architecture is minimalist, with clean lines and a contemporary aesthetic. The roller door acts as the focal point, emphasizing security, style, and advanced technology."
+          src="/assets/images/cuacuon10.png"
+          className="w-full h-full object-cover animate-image-ken-burns scale-105 filter brightness-[0.85] contrast-[1.1] saturate-[1.1]"
+          decoding="async"
         />
         <div className="absolute inset-0 hero-overlay bg-black/40 md:bg-transparent"></div>
       </div>

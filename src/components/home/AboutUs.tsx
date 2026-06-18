@@ -2,42 +2,54 @@ import Link from "next/link";
 
 export function AboutUs() {
   return (
-    <section className="py-24 bg-surface border-b border-surface-container-high relative overflow-hidden">
-      <div className="absolute -top-40 -left-40 w-96 h-96 bg-primary-container/10 rounded-full blur-[100px] pointer-events-none"></div>
+    <section className="py-20 bg-[#000000] text-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row gap-16 lg:gap-20 items-center">
+          
+          {/* Left Column - Text Content */}
+          <div className="w-full lg:w-5/12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6">Cửa cuốn Việt Đức</h2>
+            
+            <div className="space-y-6 text-gray-300 text-sm lg:text-base leading-relaxed text-justify">
+              <p>
+                Chúng tôi tự hào sở hữu đội ngũ nòng cốt bao gồm các kỹ sư xây dựng giàu kinh nghiệm cùng lực lượng thợ kỹ thuật lành nghề, được tuyển chọn và đào tạo bài bản, am hiểu sâu sắc về mọi loại cửa cuốn. Với bề dày hoạt động tích lũy qua hơn một thập kỷ (hơn 10 năm), Cửa Cuốn Việt Đức đã vững vàng khẳng định năng lực vượt trội trong lĩnh vực cung cấp dịch vụ sửa chữa chuyên sâu, khắc phục mọi sự cố kỹ thuật phức tạp, đồng thời chuyên nghiệp trong việc tư vấn và lắp đặt các hệ thống cửa cuốn mới hiện đại, luôn đảm bảo đạt tiêu chuẩn chất lượng và an toàn cao nhất.
+              </p>
+              <p>
+                Tại Cửa Cuốn Việt Đức, chúng tôi không chỉ đơn thuần là nhà cung cấp dịch vụ; chúng tôi mang đến những giải pháp toàn diện, tối ưu và hiệu quả nhất cho mọi vấn đề về cửa cuốn của bạn. Đội ngũ của chúng tôi không chỉ chuyên nghiệp trong phong cách làm việc mà còn sở hữu tay nghề đã được kiểm chứng qua thời gian dài thực tế. Chúng tôi luôn sẵn sàng tiếp nhận và cam kết đáp ứng mọi yêu cầu khắt khe từ quý khách hàng, bất kể quy mô công việc, từ những công trình nhà ở dân dụng nhỏ lẻ cho đến các dự án công nghiệp, thương mại đòi hỏi kỹ thuật lắp đặt và xử lý phức tạp. Mục tiêu cuối cùng và xuyên suốt của chúng tôi là mang lại sự an tâm tuyệt đối, tiện lợi tối đa và sự hài lòng trọn vẹn cho mọi khách hàng đã tin tưởng lựa chọn dịch vụ của Cửa Cuốn Việt Đức.
+              </p>
+            </div>
 
-      <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-        <div className="flex flex-col md:flex-row gap-12 items-center">
-          <div className="w-full md:w-1/2 relative">
-            <div className="rounded-2xl overflow-hidden shadow-md relative group bg-surface-container">
-              <img 
-                src="/assets/images/cuacuon29.png" 
-                alt="Về Cửa Cuốn Việt Đức" 
-                className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105" 
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <div className="font-display-lg text-4xl mb-1 text-primary-container">10+</div>
-                <div className="font-label-md text-sm uppercase tracking-widest text-white/80">Năm Kinh Nghiệm</div>
-              </div>
+            <div className="mt-8">
+              <a href="tel:0961685345" className="inline-flex items-center gap-2 bg-[#00d65a] hover:bg-[#00c853] text-white font-bold px-6 py-3 rounded-full transition-all duration-300 shadow-lg shadow-[#00d65a]/20">
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+                GỌI THỢ NGAY
+              </a>
             </div>
           </div>
-          <div className="w-full md:w-1/2">
-            <div className="inline-flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-full mb-6">
-              <span className="material-symbols-outlined text-primary-container text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>info</span>
-              <span className="text-label-sm font-label-sm text-on-surface uppercase tracking-widest">Về Chúng Tôi</span>
-            </div>
-            <h2 className="text-headline-lg font-headline-lg text-on-surface mb-6 uppercase">Cửa Cuốn Việt Đức</h2>
-            <p className="text-body-lg font-body-lg text-on-surface-variant mb-6 leading-relaxed">
-              Được thành lập với sứ mệnh mang đến sự an tâm tuyệt đối cho mọi gia đình và doanh nghiệp, <strong>Cửa Cuốn Việt Đức</strong> tự hào là đơn vị tiên phong trong lĩnh vực lắp đặt, sửa chữa và bảo dưỡng cửa cuốn.
-            </p>
-            <p className="text-body-md font-body-md text-on-surface-variant mb-8 leading-relaxed">
-              Với đội ngũ kỹ thuật viên lành nghề, trang thiết bị hiện đại và linh kiện chính hãng, chúng tôi cam kết mang lại dịch vụ nhanh chóng, chuyên nghiệp và giá cả cạnh tranh nhất thị trường.
-            </p>
-            <a href="tel:0982674327" className="inline-flex items-center gap-3 bg-primary-container hover:bg-primary text-on-primary-container text-label-md font-label-md px-8 py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-primary-container/20 group">
-              <span className="material-symbols-outlined group-hover:rotate-12 transition-transform" style={{ fontVariationSettings: "'FILL' 1" }}>engineering</span>
-              GỌI THỢ NGAY
-            </a>
+
+          {/* Right Column - Image */}
+          <div className="w-full lg:w-7/12 relative mt-4 lg:mt-0">
+             {/* Decorative shapes behind image */}
+             <div className="absolute -top-6 -left-6 lg:-top-10 lg:-left-10 bg-[#a7f3d0] w-2/3 h-20 -z-10 rounded-sm"></div>
+             <div className="absolute -top-6 -right-6 lg:-top-10 lg:-right-4 bg-[#00d65a] w-32 h-24 transform skew-x-12 -z-10 rounded-sm"></div>
+             
+             {/* Main Image Container */}
+             <div className="relative z-10 bg-transparent rounded shadow-2xl overflow-hidden scale-100 lg:scale-110 origin-right lg:origin-center transition-transform">
+               <img 
+                 src="/assets/images/about-us.png" 
+                 alt="Cửa Cuốn Việt Đức" 
+                 className="w-full h-auto object-cover"
+               />
+               
+               {/* Decorative dots */}
+               <div className="absolute bottom-4 right-4 grid grid-cols-4 gap-2">
+                 {[...Array(16)].map((_, i) => (
+                   <div key={i} className="w-1.5 h-1.5 bg-white/80 rounded-full"></div>
+                 ))}
+               </div>
+             </div>
           </div>
+
         </div>
       </div>
     </section>

@@ -105,9 +105,8 @@ export function Footer() {
           </div>
         </div>
       </footer>
-      {/* Fixed Floating Action Button (Zalo/Contact) */}
-      <div className="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
-        {/* Zalo Button */}
+      {/* Fixed Zalo Button - Right */}
+      <div className="fixed bottom-8 right-8 z-50">
         <a
           className="bg-[#0068ff] text-white w-14 h-14 rounded-full shadow-lg pulse-blue hover:bg-[#0052cc] transition-colors flex items-center justify-center"
           href="https://zalo.me/0982674327"
@@ -116,13 +115,23 @@ export function Footer() {
         >
           <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" className="w-[34px] h-[34px] object-contain rounded-full" />
         </a>
+      </div>
 
-        {/* Phone Button */}
+      {/* Fixed Phone Button - Left */}
+      <div className="fixed bottom-8 left-8 z-50">
         <a
-          className="bg-[#10b981] text-white w-14 h-14 rounded-full shadow-lg pulse-green hover:bg-[#059669] transition-colors flex items-center justify-center"
           href="tel:0982674327"
+          className="relative flex items-center group"
         >
-          <span className="material-symbols-outlined text-[32px]" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+          {/* Phone Number Pill */}
+          <div className="absolute left-7 bg-[#10b981] text-white font-bold text-lg px-4 py-[10px] rounded-r-full shadow-md whitespace-nowrap pl-10 pr-6 z-0 group-hover:bg-[#059669] transition-colors">
+            098.267.4327
+          </div>
+          
+          {/* Phone Icon Circle */}
+          <div className="bg-[#f39c12] text-white w-14 h-14 rounded-full shadow-lg pulse-orange group-hover:bg-[#e67e22] transition-colors flex items-center justify-center relative z-10">
+            <span className="material-symbols-outlined text-[32px]" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+          </div>
         </a>
       </div>
     </>

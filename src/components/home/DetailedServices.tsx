@@ -41,14 +41,39 @@ export function DetailedServices() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {services.map((service, index) => (
-            <div key={index} className="bg-surface p-4 rounded-xl shadow-sm border border-surface-container-high hover:border-primary-container/50 transition-colors flex items-start gap-3 group relative z-10">
-              <span className="material-symbols-outlined text-primary-container shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-              <span className="text-body-md text-on-surface">{service}</span>
+        <div className="flex flex-col lg:flex-row gap-10 items-start">
+          {/* Left Column - Image */}
+          <div className="w-full lg:w-5/12 sticky top-28">
+            <img 
+              src="/assets/images/dichvu.png" 
+              alt="Dịch vụ Cửa Cuốn" 
+              className="w-full h-auto object-cover rounded-xl shadow-lg border border-surface-container-highest"
+            />
+          </div>
+
+          {/* Right Column - Service Table */}
+          <div className="w-full lg:w-7/12">
+            <div className="bg-surface rounded-xl border border-surface-container-highest overflow-hidden">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="bg-surface-container-low border-b border-surface-container-highest">
+                    <th className="py-4 px-6 text-sm font-bold text-on-surface-variant w-16 md:w-20">STT</th>
+                    <th className="py-4 px-6 text-sm font-bold text-on-surface-variant">Dịch vụ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {services.map((service, index) => (
+                    <tr key={index} className="border-b border-surface-container-highest last:border-b-0 hover:bg-surface-container-low transition-colors">
+                      <td className="py-3.5 px-6 text-sm font-semibold text-on-surface-variant">{index + 1}</td>
+                      <td className="py-3.5 px-6 text-sm md:text-base text-on-surface">{service}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-          ))}
+          </div>
         </div>
+
       </div>
     </section>
   );
