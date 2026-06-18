@@ -29,6 +29,7 @@ export function Footer() {
                   <div className="flex flex-col gap-1">
                     <span className="font-medium text-on-surface">Hệ thống hơn 50+ chi nhánh</span>
                   </div>
+
                 </div>
                 <div className="flex items-center gap-3 text-on-surface-variant">
                   <span className="material-symbols-outlined text-primary-container text-xl shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
@@ -107,8 +108,8 @@ export function Footer() {
       {/* Fixed Floating Action Button (Zalo/Contact) */}
       <div className="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
         {/* Zalo Button */}
-        <a 
-          className="bg-[#0068ff] text-white w-14 h-14 rounded-full shadow-lg pulse-blue hover:bg-[#0052cc] transition-colors flex items-center justify-center" 
+        <a
+          className="bg-[#0068ff] text-white w-14 h-14 rounded-full shadow-lg pulse-blue hover:bg-[#0052cc] transition-colors flex items-center justify-center"
           href="https://zalo.me/0982674327"
           target="_blank"
           rel="noopener noreferrer"
@@ -117,8 +118,8 @@ export function Footer() {
         </a>
 
         {/* Phone Button */}
-        <a 
-          className="bg-[#10b981] text-white w-14 h-14 rounded-full shadow-lg pulse-green hover:bg-[#059669] transition-colors flex items-center justify-center" 
+        <a
+          className="bg-[#10b981] text-white w-14 h-14 rounded-full shadow-lg pulse-green hover:bg-[#059669] transition-colors flex items-center justify-center"
           href="tel:0982674327"
         >
           <span className="material-symbols-outlined text-[32px]" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
