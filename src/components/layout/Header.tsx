@@ -29,8 +29,8 @@ export function Header() {
   };
 
   return (
-    <nav className="bg-surface shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 border-b border-surface-variant">
-      <Link href="/" className="flex items-center w-48 md:w-64 shrink-0">
+    <nav className="bg-surface shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-5 md:px-margin-desktop h-20 border-b border-surface-variant">
+      <Link href="/" className="mt-2.5 flex items-center w-48 md:w-64 shrink-0 sm:ml-4">
         <img src="/assets/images/logo.png" alt="Cửa cuốn Việt Đức Logo" className="h-14 md:h-16 w-auto object-contain scale-[2.5] origin-left -ml-10 md:-ml-16" />
       </Link>
 
@@ -50,10 +50,10 @@ export function Header() {
         </a>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-primary-container p-2 -mr-2 focus:outline-none"
+          className="flex items-center md:hidden text-primary-container p-2 -mr-2 focus:outline-none"
           aria-label="Toggle Menu"
         >
-          <span className="material-symbols-outlined text-4xl">{isMenuOpen ? 'close' : 'menu'}</span>
+          <span className="material-symbols-outlined text-[44px] leading-none">{isMenuOpen ? 'close' : 'menu'}</span>
         </button>
       </div>
 
