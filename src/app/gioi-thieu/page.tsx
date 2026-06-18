@@ -55,7 +55,7 @@ export default function GioiThieu() {
               </p>
             </div>
             <div className="w-full lg:w-1/2">
-              <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl relative border border-surface-container-highest">
+              <div className="aspect-video rounded-3xl overflow-hidden shadow-md relative border border-surface-container-highest">
                 <img src="/assets/images/2.jpg" alt="Lịch sử Cửa Cuốn Việt Đức" className="w-full h-full object-cover" />
               </div>
             </div>

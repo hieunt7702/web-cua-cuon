@@ -8,7 +8,7 @@ export function AboutUs() {
       <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="w-full md:w-1/2 relative">
-            <div className="aspect-video md:aspect-square rounded-2xl overflow-hidden shadow-2xl relative group">
+            <div className="aspect-video md:aspect-square rounded-2xl overflow-hidden shadow-md relative group">
               <img 
                 src="/assets/images/hero.jpg" 
                 alt="Về Cửa Cuốn Việt Đức" 

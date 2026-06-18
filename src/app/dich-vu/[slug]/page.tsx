@@ -56,9 +56,9 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
             </div>
 
             <div className="w-full md:w-2/5">
-               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl relative border-4 border-surface group">
-                 <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-md relative border-4 border-surface group">
+                <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                 <div className="absolute inset-0 flex items-end p-6 pointer-events-none">
                     <div className="flex items-center gap-2 bg-primary-container/90 backdrop-blur text-on-primary-container px-3 py-1.5 rounded-full text-label-sm">
                        <span className="material-symbols-outlined text-sm">verified</span>
                        Cam Kết Khắc Phục Triệt Để 100%

@@ -14,24 +14,23 @@ export function PrimaryServices() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesData.map((service, index) => (
-            <div key={index} className="bg-surface-container rounded-lg overflow-hidden card-shadow group">
+            <Link href={`/dich-vu/${service.slug}`} key={index} className="bg-surface-container rounded-lg overflow-hidden card-shadow group block hover:shadow-xl transition-shadow cursor-pointer">
               <div className="relative h-48 overflow-hidden flex items-center justify-center bg-surface-container-high">
                 {service.image ? (
                   <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 ) : (
                   <span className="material-symbols-outlined text-6xl text-outline-variant group-hover:scale-110 transition-transform duration-500" style={{ fontVariationSettings: "'FILL' 0" }}>{service.icon}</span>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-surface-container/50 to-transparent pointer-events-none"></div>
                 <div className="absolute top-4 right-4 bg-primary-container text-on-primary-container text-label-sm font-label-sm px-3 py-1 rounded-full uppercase">24/7 Service</div>
               </div>
               <div className="p-6">
-                <h3 className="text-headline-md font-headline-md text-on-surface mb-2 line-clamp-2" title={service.title}>{service.title}</h3>
+                <h3 className="text-headline-md font-headline-md text-on-surface mb-2 line-clamp-2 group-hover:text-primary transition-colors" title={service.title}>{service.title}</h3>
                 <p className="text-body-md font-body-md text-on-surface-variant mb-4 line-clamp-2">{service.excerpt}</p>
-                <Link className="inline-flex items-center text-primary-container font-label-md text-label-md hover:text-primary transition-colors" href={`/dich-vu/${service.slug}`}>
-                  Xem chi tiết <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
-                </Link>
+                <span className="inline-flex items-center text-primary-container font-label-md text-label-md group-hover:text-primary transition-colors">
+                  Xem chi tiết <span className="material-symbols-outlined ml-1 text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

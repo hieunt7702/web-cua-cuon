@@ -1,7 +1,7 @@
 export function CallToAction() {
   return (
     <section className="py-16 px-margin-mobile md:px-margin-desktop bg-background border-t border-surface-container-high">
-      <div className="max-w-max-width mx-auto bg-gradient-to-r from-primary-container to-secondary-container rounded-3xl p-6 md:p-16 shadow-2xl relative overflow-hidden">
+      <div className="max-w-max-width mx-auto bg-gradient-to-r from-primary-container to-secondary-container rounded-3xl p-6 md:p-16 shadow-md relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none"></div>
         

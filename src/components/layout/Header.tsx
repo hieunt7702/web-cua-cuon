@@ -59,7 +59,7 @@ export function Header() {
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <div className="absolute top-20 left-0 w-full h-[calc(100vh-80px)] bg-surface border-t border-surface-variant shadow-2xl md:hidden flex flex-col py-8 z-40 overflow-y-auto px-6">
+        <div className="absolute top-20 left-0 w-full h-[calc(100vh-80px)] bg-surface border-t border-surface-variant shadow-md md:hidden flex flex-col py-8 z-40 overflow-y-auto px-6">
           <div className="flex flex-col gap-2 w-full">
             <Link onClick={() => setIsMenuOpen(false)} className={getMobileLinkClasses("/")} href="/">
               <span className="material-symbols-outlined text-3xl">home</span> Trang Chủ
