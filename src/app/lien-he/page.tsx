@@ -111,62 +111,35 @@ export default function LienHe() {
       {/* Contact Form & Info */}
       <section className="py-24 bg-background relative overflow-hidden border-t border-surface-container-high">
         <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-          <div className="flex flex-col lg:flex-row gap-16">
-            {/* Form */}
-            <div className="w-full lg:w-1/2 bg-surface p-8 rounded-3xl border border-surface-container-high shadow-xl">
-              <h2 className="text-headline-lg font-headline-lg text-on-surface mb-6">Gửi Yêu Cầu Cho Chúng Tôi</h2>
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-body-sm text-on-surface-variant mb-2">Họ & Tên</label>
-                  <input type="text" className="w-full bg-surface-container border border-surface-container-high rounded-xl px-4 py-3 text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all" placeholder="Nhập tên của bạn" />
-                </div>
-                <div>
-                  <label className="block text-body-sm text-on-surface-variant mb-2">Số Điện Thoại *</label>
-                  <input type="tel" className="w-full bg-surface-container border border-surface-container-high rounded-xl px-4 py-3 text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all" placeholder="Nhập số điện thoại để thợ gọi lại" required />
-                </div>
-                <div>
-                  <label className="block text-body-sm text-on-surface-variant mb-2">Nội Dung Yêu Cầu</label>
-                  <textarea className="w-full bg-surface-container border border-surface-container-high rounded-xl px-4 py-3 text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all" rows={4} placeholder="Mô tả sự cố bạn đang gặp phải..."></textarea>
-                </div>
-                <button type="submit" className="w-full bg-primary-container hover:bg-primary text-on-primary-container font-medium text-body-lg py-4 rounded-xl transition-colors shadow-lg">Gửi Yêu Cầu Ngay</button>
-              </form>
+          <div className="max-w-3xl mx-auto space-y-6 md:space-y-8">
+            
+            <div className="bg-surface-container p-6 md:p-8 rounded-2xl border border-surface-container-high flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 md:gap-6 hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0 text-primary-container">
+                <span className="material-symbols-outlined text-2xl md:text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>phone_in_talk</span>
+              </div>
+              <div className="w-full">
+                <div className="text-label-sm text-on-surface-variant uppercase tracking-widest mb-1 md:mb-2 mt-1 sm:mt-0">Hotline Kỹ Thuật 24/7</div>
+                <a href="tel:0982674327" className="text-headline-sm md:text-headline-lg text-primary-container font-medium hover:text-primary transition-colors block">098.267.4327</a>
+              </div>
             </div>
             
-            {/* Quick Contact Info */}
-            <div className="w-full lg:w-1/2 space-y-8">
-              <div className="bg-surface-container p-6 rounded-2xl border border-surface-container-high flex items-center gap-6">
-                <div className="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0 text-primary-container">
-                  <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>mail</span>
-                </div>
-                <div>
-                  <div className="text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Email Doanh Nghiệp</div>
-                  <a href="mailto:cuacuonvietduc0421@gmail.com" className="text-headline-lg text-primary-container font-medium hover:text-primary transition-colors" style={{ fontSize: "1.25rem" }}>cuacuonvietduc0421@gmail.com</a>
-                </div>
+            <div className="bg-surface-container p-6 md:p-8 rounded-2xl border border-surface-container-high flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 md:gap-6 hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0 text-primary-container">
+                <span className="material-symbols-outlined text-2xl md:text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>forum</span>
               </div>
+              <div className="w-full">
+                <div className="text-label-sm text-on-surface-variant uppercase tracking-widest mb-1 md:mb-2 mt-1 sm:mt-0">Chat Trực Tuyến</div>
+                <a href="https://zalo.me/0982674327" target="_blank" rel="noopener noreferrer" className="text-headline-sm md:text-headline-lg text-primary-container font-medium hover:text-primary transition-colors block">Zalo: 098.267.4327</a>
+              </div>
+            </div>
 
-              <div>
-                <h2 className="text-headline-lg font-headline-lg text-on-surface mb-6">Thông Tin Liên Hệ Nhanh</h2>
-                <p className="text-body-lg text-on-surface-variant mb-8">Gọi trực tiếp cho đường dây nóng hoặc nhắn tin Zalo để được phản hồi lập tức. Miễn phí kiểm tra và báo giá tận nhà.</p>
+            <div className="bg-surface-container p-6 md:p-8 rounded-2xl border border-surface-container-high flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 md:gap-6 hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0 text-primary-container">
+                <span className="material-symbols-outlined text-2xl md:text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>mail</span>
               </div>
-              
-              <div className="bg-surface-container p-6 rounded-2xl border border-surface-container-high flex items-center gap-6">
-                <div className="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0 text-primary-container">
-                  <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>phone_in_talk</span>
-                </div>
-                <div>
-                  <div className="text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Hotline Kỹ Thuật 24/7</div>
-                  <a href="tel:0982674327" className="text-headline-lg text-primary-container font-medium hover:text-primary transition-colors">098.267.4327</a>
-                </div>
-              </div>
-              
-              <div className="bg-surface-container p-6 rounded-2xl border border-surface-container-high flex items-center gap-6">
-                <div className="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0 text-primary-container">
-                  <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>forum</span>
-                </div>
-                <div>
-                  <div className="text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Chat Trực Tuyến</div>
-                  <a href="https://zalo.me/0982674327" target="_blank" rel="noopener noreferrer" className="text-headline-lg text-primary-container font-medium hover:text-primary transition-colors">Zalo: 098.267.4327</a>
-                </div>
+              <div className="w-full">
+                <div className="text-label-sm text-on-surface-variant uppercase tracking-widest mb-1 md:mb-2 mt-1 sm:mt-0">Email Doanh Nghiệp</div>
+                <a href="mailto:cuacuonvietduc0421@gmail.com" className="text-headline-sm md:text-headline-md text-primary-container font-medium hover:text-primary transition-colors block break-all">cuacuonvietduc0421@gmail.com</a>
               </div>
             </div>
           </div>
