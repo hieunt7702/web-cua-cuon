@@ -53,7 +53,7 @@ export default async function ProductDetail({ params }: { params: Promise<{ slug
   return (
     <>
       <section className="py-16 md:py-20 bg-surface relative overflow-hidden border-b border-surface-container-high">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 pointer-events-none"></div>
+        <div className="absolute inset-0 opacity-20 pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-container/10 to-transparent pointer-events-none"></div>
         
         <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10">

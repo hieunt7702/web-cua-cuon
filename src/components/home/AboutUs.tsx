@@ -10,7 +10,7 @@ export function AboutUs() {
           <div className="w-full md:w-1/2 relative">
             <div className="aspect-video md:aspect-square rounded-2xl overflow-hidden shadow-2xl relative group">
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTuix2ZgXq2q2IeB2maYHC8tC0gTo-312jqpUljbIO_WtchHyC7Ogynat8frArRWpid5XgwF5CxDwGixbHOMyeUPwxPxOzlufqqEtB3JrNLsmW0lRJXvH5_A8CF9QBAZBeoP1Y7i7HN0dXrlRrQoisfy3USLneF1mCvYTlwdLsBZtGV7P-hndbpqXfxOO3Hu1IiMtNfbM-o3L2RCOY4hQ2_T3wJkjIIGW2037HftigvOhQ3qNPgq_YQFdL-pOrzeQFgnELTvwSuXWy" 
+                src="/assets/images/hero.jpg" 
                 alt="Về Cửa Cuốn Việt Đức" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
               />

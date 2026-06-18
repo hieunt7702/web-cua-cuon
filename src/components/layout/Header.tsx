@@ -30,12 +30,10 @@ export function Header() {
 
   return (
     <nav className="bg-surface shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 border-b border-surface-variant">
-      <Link href="/" className="flex items-center">
-        <span className="text-lg md:text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary-container to-yellow-600" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 500 }}>
-          Cửa cuốn Việt Đức
-        </span>
+      <Link href="/" className="flex items-center w-48 md:w-64 shrink-0">
+        <img src="/assets/images/logo.png" alt="Cửa cuốn Việt Đức Logo" className="h-14 md:h-16 w-auto object-contain scale-[2.5] origin-left -ml-10 md:-ml-16" />
       </Link>
-      
+
       <ul className="hidden md:flex lg:flex gap-4 lg:gap-8 xl:gap-12">
         <li><Link className={getLinkClasses("/")} href="/">Trang Chủ</Link></li>
         <li><Link className={getLinkClasses("/gioi-thieu")} href="/gioi-thieu">Giới Thiệu</Link></li>
@@ -50,8 +48,8 @@ export function Header() {
           <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
           098.267.4327
         </a>
-        <button 
-          onClick={() => setIsMenuOpen(!isMenuOpen)} 
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden text-primary-container p-2 -mr-2 focus:outline-none"
           aria-label="Toggle Menu"
         >
@@ -82,7 +80,7 @@ export function Header() {
               <span className="material-symbols-outlined text-3xl">contact_support</span> Liên Hệ
             </Link>
           </div>
-          
+
           <div className="mt-12 flex flex-col w-full gap-4 pb-12">
             <a className="flex items-center justify-center gap-3 bg-primary-container text-on-primary px-6 py-5 rounded-2xl font-bold text-headline-sm hover:bg-primary transition-colors shadow-lg" href="tel:0982674327">
               <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>

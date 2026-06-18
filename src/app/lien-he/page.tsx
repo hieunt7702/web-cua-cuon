@@ -85,7 +85,7 @@ export default function LienHe() {
     <>
       {/* Page Hero */}
       <section className="py-16 md:py-20 bg-surface relative overflow-hidden border-b border-surface-container-high">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 pointer-events-none"></div>
+        <div className="absolute inset-0 opacity-20 pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-container/10 to-transparent pointer-events-none"></div>
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-primary-container/5 rounded-full blur-[100px] pointer-events-none"></div>
 

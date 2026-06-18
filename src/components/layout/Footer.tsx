@@ -17,16 +17,8 @@ export function Footer() {
 
             {/* Column 1: Brand & Contact */}
             <div className="space-y-6 lg:col-span-2 lg:pr-8">
-              <div className="flex items-center gap-3">
-                <div className="relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-primary-container to-yellow-600 shadow-lg border border-white/10 shrink-0">
-                  <span className="material-symbols-outlined text-white text-2xl md:text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>roofing</span>
-                </div>
-                <div className="flex flex-col justify-center">
-                  <span className="text-xl md:text-2xl font-black uppercase tracking-widest text-on-surface leading-none" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                    Việt <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-yellow-500">Đức</span>
-                  </span>
-                  <span className="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-on-surface-variant mt-1.5 leading-none">Hệ Thống Cửa Cuốn</span>
-                </div>
+              <div className="flex items-center w-64 md:w-80 h-16 shrink-0">
+                <img src="/assets/images/logo.png" alt="Cửa cuốn Việt Đức Logo" className="h-16 md:h-20 w-auto object-contain scale-[2.5] origin-left -ml-10 md:-ml-16" />
               </div>
               <p className="text-body-md text-on-surface-variant leading-relaxed">
                 Giải pháp an ninh toàn diện. Phục vụ chuyên nghiệp, tận tâm, có mặt nhanh chóng sau 30 phút.
