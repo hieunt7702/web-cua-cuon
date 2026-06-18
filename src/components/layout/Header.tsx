@@ -29,7 +29,7 @@ export function Header() {
   };
 
   return (
-    <nav className="bg-surface shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-5 md:px-margin-desktop h-20 border-b border-surface-variant">
+    <nav className="bg-surface shadow-md md:shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-5 md:px-margin-desktop h-20 border-2 border-primary/30 md:border-0 md:border-b md:border-surface-variant">
       <Link href="/" className="mt-2.5 flex items-center w-48 md:w-64 shrink-0 sm:ml-4">
         <img src="/assets/images/logo.png" alt="Cửa cuốn Việt Đức Logo" className="h-14 md:h-16 w-auto object-contain scale-[2.5] origin-left -ml-10 md:-ml-16" />
       </Link>
