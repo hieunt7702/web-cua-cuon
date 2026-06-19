@@ -18,7 +18,7 @@ export function Footer() {
             {/* Column 1: Brand & Contact */}
             <div className="space-y-6 lg:col-span-2 lg:pr-8">
               <div className="flex items-center w-64 md:w-80 h-16 shrink-0">
-                <img src="/assets/images/logo.png" alt="Cửa cuốn Việt Đức Logo" className="h-16 md:h-20 w-auto object-contain scale-[2.5] origin-left -ml-10 md:-ml-16" />
+                <img src="/assets/images/logo3.png" alt="Cửa cuốn Việt Đức Logo" className="h-16 md:h-20 w-auto object-contain scale-[2.5] origin-left -ml-10 md:-ml-16" />
               </div>
               <p className="text-body-md text-on-surface-variant leading-relaxed">
                 Giải pháp an ninh toàn diện. Phục vụ chuyên nghiệp, tận tâm, có mặt nhanh chóng sau 30 phút.
@@ -127,7 +127,7 @@ export function Footer() {
           <div className="absolute left-7 bg-[#10b981] text-white font-bold text-lg px-4 py-[10px] rounded-r-full shadow-md whitespace-nowrap pl-10 pr-6 z-0 group-hover:bg-[#059669] transition-colors">
             098.267.4327
           </div>
-          
+
           {/* Phone Icon Circle */}
           <div className="bg-[#f39c12] text-white w-14 h-14 rounded-full shadow-lg pulse-orange group-hover:bg-[#e67e22] transition-colors flex items-center justify-center relative z-10">
             <span className="material-symbols-outlined text-[32px]" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
